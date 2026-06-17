@@ -1,0 +1,90 @@
+metamodel_version: "0.1"
+
+entities:
+
+  Scenario:
+    description: "Defines the ERP migration context and domain setting."
+    attributes:
+      id: string
+      name: string
+      domain: string
+      description: string
+
+  Schema:
+    description: "Defines structure of source and target ERP systems."
+    attributes:
+      id: string
+      type: ["source", "target"]
+      fields:
+        - name: string
+          datatype: string
+          required: boolean
+
+  Dataset:
+    description: "Synthetic dataset generated from a schema."
+    attributes:
+      id: string
+      schema_id: string
+      records: list
+      size: integer
+
+  NoiseProfile:
+    description: "Defines data corruption rules applied to datasets."
+    attributes:
+      id: string
+      noise_types:
+        - type: ["typo", "missing_value"]
+          probability: float
+          fields: list
+
+  Task:
+    description: "Defines benchmark tasks derived from scenarios and datasets."
+    attributes:
+      id: string
+      scenario_id: string
+      task_type: string
+      input_dataset_id: string
+      instructions: string
+
+  GroundTruth:
+    description: "Expected correct output for a given task."
+    attributes:
+      id: string
+      task_id: string
+      expected_output: any
+
+  EvaluationResult:
+    description: "Stores evaluation metrics comparing predictions to ground truth."
+    attributes:
+      id: string
+      task_id: string
+      metrics:
+        accuracy: float
+        precision: float
+        recall: float
+
+relationships:
+
+  - from: Scenario
+    to: Schema
+    type: "defines"
+
+  - from: Schema
+    to: Dataset
+    type: "generates"
+
+  - from: Dataset
+    to: NoiseProfile
+    type: "corrupted_by"
+
+  - from: Scenario
+    to: Task
+    type: "instantiates"
+
+  - from: Task
+    to: GroundTruth
+    type: "has"
+
+  - from: GroundTruth
+    to: EvaluationResult
+    type: "evaluated_by"
