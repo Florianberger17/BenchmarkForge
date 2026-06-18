@@ -1,4 +1,4 @@
-# BenchmarForge Metamodel v0.1
+# BenchmarkForge Metamodel v0.1
 
 ## Overview
 

@@ -1,0 +1,90 @@
+scenario_id: ERP_CUSTOMER_MIGRATION_V1
+
+name: ERP Customer Migration
+
+domain: ERP Data Integration
+
+description: >
+  Migration of customer master data from a legacy ERP system
+  to a modern ERP system as part of a corporate integration.
+
+business_object:
+  - Customer
+
+systems:
+
+  source:
+    name: Legacy ERP System
+    description: >
+      Contains historical customer master data with duplicates,
+      outdated and inconsistent records.
+
+  target:
+    name: Target ERP System
+    description: >
+      Requires cleaned, standardized and deduplicated customer data.
+
+activities:
+
+  - id: ACT-001
+    name: Schema Mapping
+
+  - id: ACT-002
+    name: Duplicate Detection
+
+  - id: ACT-003
+    name: Customer Filtering
+
+  - id: ACT-004
+    name: Address Validation
+
+  - id: ACT-005
+    name: Migration Output Generation
+
+business_rules:
+
+  - id: BR-001
+    description: >
+      Only customers with business activity within the last 3 years
+      are eligible for migration.
+
+  - id: BR-002
+    description: >
+      Duplicate customer records must be merged into a single record.
+
+  - id: BR-003
+    description: >
+      Address updates must be applied before migration is executed.
+
+inputs:
+
+  - name: customer_master_source.csv
+    type: csv
+
+  - name: customer_master_target_schema.csv
+    type: csv
+
+  - name: address_updates.pdf
+    type: pdf
+
+outputs:
+
+  - name: migrated_customer_master.csv
+    type: csv
+
+  - name: migration_explanation.txt
+    type: txt
+
+constraints:
+
+  scope_included:
+    - Customer master data migration
+    - Data cleaning and validation
+    - Schema transformation
+    - Business rule enforcement
+
+  scope_excluded:
+    - ERP configuration
+    - Infrastructure setup
+    - Performance tuning
+    - User training

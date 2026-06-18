@@ -1,0 +1,75 @@
+activity_catalog_version: "1.0"
+
+activities:
+
+  - id: ACT-001
+    name: Schema Mapping
+    type: transformation
+    purpose: Map source schema fields to target schema fields
+    inputs:
+      - source_schema
+      - target_schema
+      - dataset
+    outputs:
+      - mapped_dataset
+    description: >
+      Transforms data from a source structure into a target structure.
+
+  - id: ACT-002
+    name: Record Filtering
+    type: filtering
+    purpose: Filter dataset records based on business rules
+    inputs:
+      - dataset
+      - business_rules
+    outputs:
+      - filtered_dataset
+    description: >
+      Removes records that do not satisfy defined business conditions.
+
+  - id: ACT-003
+    name: Duplicate Detection
+    type: quality_check
+    purpose: Identify duplicate records in dataset
+    inputs:
+      - dataset
+    outputs:
+      - duplicate_report
+    description: >
+      Detects duplicate records based on matching heuristics or keys.
+
+  - id: ACT-004
+    name: Data Enrichment
+    type: enrichment
+    purpose: Enrich dataset using external sources
+    inputs:
+      - dataset
+      - external_sources
+    outputs:
+      - enriched_dataset
+    description: >
+      Adds missing or updated information to existing records.
+
+  - id: ACT-005
+    name: Data Validation
+    type: validation
+    purpose: Validate dataset consistency and rule compliance
+    inputs:
+      - dataset
+      - validation_rules
+    outputs:
+      - validation_report
+    description: >
+      Checks data integrity and business rule adherence.
+
+  - id: ACT-006
+    name: Output Generation
+    type: generation
+    purpose: Generate final benchmark output artifacts
+    inputs:
+      - dataset
+    outputs:
+      - final_dataset
+      - execution_report
+    description: >
+      Produces final outputs for benchmarking and evaluation.
