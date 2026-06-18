@@ -3,7 +3,9 @@ metamodel_version: "0.1"
 entities:
 
   Scenario:
-    description: "Defines the ERP migration context and domain setting."
+    description: >
+      Defines the business context and benchmark use case.
+
     attributes:
       id: string
       name: string
@@ -11,34 +13,79 @@ entities:
       description: string
 
   Schema:
-    description: "Defines structure of source and target ERP systems."
+    description: >
+      Defines the structure of source and target business objects.
+
     attributes:
       id: string
-      type: ["source", "target"]
+      type:
+        - source
+        - target
       fields:
         - name: string
           datatype: string
           required: boolean
 
-  Dataset:
-    description: "Synthetic dataset generated from a schema."
+  CleanDataset:
+    description: >
+      Noise-free synthetic reference dataset representing factual truth.
+
     attributes:
       id: string
       schema_id: string
-      records: list
-      size: integer
+      record_count: integer
+      format:
+        - csv
+        - xml
+        - json
 
   NoiseProfile:
-    description: "Defines data corruption rules applied to datasets."
+    description: >
+      Defines controlled data quality degradations.
+
     attributes:
       id: string
       noise_types:
-        - type: ["typo", "missing_value"]
+        - type:
+            - typo
+            - missing_value
+            - duplicate
+            - outdated_information
           probability: float
           fields: list
 
+  BenchmarkDataset:
+    description: >
+      Benchmark input dataset generated from a clean dataset.
+
+    attributes:
+      id: string
+      source_dataset_id: string
+      noise_profile_id: string
+      record_count: integer
+      format:
+        - csv
+        - xml
+        - json
+
+  BusinessRule:
+    description: >
+      Domain-specific migration and transformation logic.
+
+    attributes:
+      id: string
+      name: string
+      description: string
+      rule_type:
+        - migration
+        - filtering
+        - matching
+        - validation
+
   Task:
-    description: "Defines benchmark tasks derived from scenarios and datasets."
+    description: >
+      Benchmark task executed within a scenario.
+
     attributes:
       id: string
       scenario_id: string
@@ -47,44 +94,54 @@ entities:
       instructions: string
 
   GroundTruth:
-    description: "Expected correct output for a given task."
-    attributes:
-      id: string
-      task_id: string
-      expected_output: any
+    description: >
+      Expected correct solution generated from clean data and business rules.
 
-  EvaluationResult:
-    description: "Stores evaluation metrics comparing predictions to ground truth."
     attributes:
       id: string
       task_id: string
-      metrics:
-        accuracy: float
-        precision: float
-        recall: float
+      source_dataset_id: string
+      applied_rule_ids: list
+      expected_output_format:
+        - csv
+        - xml
+        - json
+        - txt
 
 relationships:
 
   - from: Scenario
-    to: Schema
-    type: "defines"
+    to: Task
+    type: contains
 
   - from: Schema
-    to: Dataset
-    type: "generates"
+    to: CleanDataset
+    type: structures
 
-  - from: Dataset
+  - from: CleanDataset
     to: NoiseProfile
-    type: "corrupted_by"
+    type: transformed_by
 
-  - from: Scenario
-    to: Task
-    type: "instantiates"
+  - from: NoiseProfile
+    to: BenchmarkDataset
+    type: generates
+
+  - from: Task
+    to: BenchmarkDataset
+    type: uses
+
+  - from: Task
+    to: BusinessRule
+    type: governed_by
+
+  - from: CleanDataset
+    to: BusinessRule
+    type: processed_by
+
+  - from: BusinessRule
+    to: GroundTruth
+    type: generates
 
   - from: Task
     to: GroundTruth
-    type: "has"
-
-  - from: GroundTruth
-    to: EvaluationResult
-    type: "evaluated_by"
+    type: has
