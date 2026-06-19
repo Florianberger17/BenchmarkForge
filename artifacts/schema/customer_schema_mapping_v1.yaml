@@ -1,0 +1,95 @@
+mapping_id: CUSTOMER_SCHEMA_MAPPING_V1
+
+name: Customer Schema Mapping Specification
+
+version: 1.2
+
+source_schema: SOURCE_CUSTOMER_V1
+target_schema: TARGET_ERP_CUSTOMER_V1
+
+mappings:
+
+  - source: CustNo
+    target: CustomerID
+    type: direct
+
+  - source: CompanyName
+    target: Name
+    type: direct
+
+  - source: ZipCode
+    target: PostalCode
+    type: direct
+
+  - source: Town
+    target: City
+    type: direct
+
+  - source: CountryCode
+    target: Country
+    type: transform
+    transformation: iso3166_alpha3_normalization
+
+  - source: LastOrderDate
+    target: LastBusinessActivityDate
+    type: direct
+
+composed_fields:
+
+  - target: Street
+    type: concatenation
+    sources:
+      - StreetAddress
+      - HouseNo
+    separator: " "
+    condition: HouseNo exists
+
+derived_fields:
+
+  - target: Status
+    type: rule_based
+    rules:
+
+      - condition: "LastBusinessActivityDate >= NOW - 3 years"
+        value: active
+
+      - condition: "LastBusinessActivityDate < NOW - 3 years"
+        value: inactive
+
+      - condition: "LastBusinessActivityDate is NULL"
+        value: inactive
+
+normalization_rules:
+
+  - field: Country
+    type: iso3166_alpha3
+    source: CountryCode
+    mapping_examples:
+      DE: DEU
+      GER: DEU
+      Germany: DEU
+
+constraints_alignment:
+
+  required_fields:
+    - CustomerID
+    - Name
+    - Country
+    - LastBusinessActivityDate
+    - Status
+
+ignored_fields:
+  - CustomerType
+
+used_by:
+
+  - Synthetic Data Generator
+  - Ground Truth Generator
+  - Evaluation Engine
+  - Schema Mapping Activity (ACT-001)
+
+assumptions:
+
+  - Mapping is deterministic for clean data
+  - Noise is applied after mapping
+  - Missing required fields are not expected in clean dataset
