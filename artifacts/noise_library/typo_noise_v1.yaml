@@ -1,0 +1,34 @@
+noise_type: typo_noise_v1
+
+description: >
+  Introduces character-level distortions into textual fields.
+
+applicable_fields:
+  - CompanyName
+  - StreetAddress
+  - Town
+
+patterns:
+
+  - name: character_swap
+    description: Swap two adjacent characters
+    example:
+      input: "Müller"
+      output: "Mülrle"
+
+  - name: character_deletion
+    description: Remove a random character
+    example:
+      input: "Berlin"
+      output: "Brlin"
+
+  - name: character_duplication
+    description: Duplicate a character
+    example:
+      input: "Hamburg"
+      output: "Hamburgg"
+
+severity_levels:
+  - low
+  - medium
+  - high

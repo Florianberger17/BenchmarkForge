@@ -1,0 +1,4 @@
+seed: 42
+noise_rate: 0.2
+
+target_field: CompanyName

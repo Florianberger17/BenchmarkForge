@@ -1,0 +1,101 @@
+CustNo,CompanyName,StreetAddress,HouseNo,ZipCode,Town,CountryCode,LastOrderDate,CustomerType
+CUST000001,Dowerg,Jolanta-Höfig-Platz,164,21819,Backnang,DE,2026-03-10,FormerCustomer
+CUST000002,Davids G & Co. OHG,Alwine-Schleich-Gasse,71,86379,Altötting,DE,2023-12-19,Customer
+CUST000003,Thanel GmbH & Co. KG,Holstenplatz,189,51161,Ilmenau,DE,2018-11-18,FormerCustomer
+CUST000004,Hettner,Janet-Mies-Weg,140,61849,Roding,DE,2019-11-06,Prospect
+CUST000005,Tlustek AG,Gesche-Heidrich-Ring,9,31647,Eberswalde,DE,2025-06-02,Customer
+CUST000006,Klapp Häring OHG mbH,Tintzmannweg,60,92832,Konstanz,CH,2019-09-20,Customer
+CUST000007,Shwital Stroh KG,Hedy-Junk-Gasse,144,5641,Reutlingen,DE,2019-03-08,FormerCustomer
+CUST000008,Jpoich,Gerdi-Ortmann-Straße,140,24238,Wolfratshausen,AT,2023-12-31,Prospect
+CUST000009,Lorch,Klotzplatz,151,87101,Sebnitz,AT,2026-05-25,Customer
+CUST000010,Zorbach OHGm bH,Schenkgasse,179,69784,Tecklenburg,AT,2022-08-27,Prospect
+CUST000011,Drewes,Wilmsenweg,40,14627,Werdau,DE,2022-09-11,Customer
+CUST000012,Hesse,Ana-Döring-Allee,24,89325,Plauen,AT,2025-05-20,Prospect
+CUST000013,Ackermann,Niemeiergasse,89,54303,Borna,CH,2023-07-03,Customer
+CUST000014,Neureuther,Zofia-Wesack-Weg,187,27824,Freudenstadt,AT,2020-06-15,Customer
+CUST000015,Wende,Ingried-Jockel-Straße,97,78713,Belzig,DE,2020-04-11,Prospect
+CUST000016,Bärer Schacth KG,Dajana-Hartmann-Gasse,161,3105,Osterburg,CH,2022-05-31,FormerCustomer
+CUST000017,Holsten OHG mbH,Hamannstr.,50,99737,Erkelenz,CH,2025-09-09,Customer
+CUST000018,Dietz OHG mbH,Klappstraße,170,70106,Bützow,DE,2023-03-23,Customer
+CUST000019,Gröttner AG & Co. OHG,Etzoldstraße,60,47317,Badibling,DE,2022-03-17,Prospect
+CUST000020,Reuter,Wenke-Davids-Platz,117,67736,Eckernförde,CH,2022-05-18,Customer
+CUST000021,Aler Krebs GbR,Hörlestraße,95,23430,Wolfratshausen,AT,2024-02-13,FormerCustomer
+CUST000022,Bohlander Binner KG,Paffrathallee,69,8121,Sulzbach-Rosenberg,CH,2018-10-21,FormerCustomer
+CUST000023,Kusch AG,Clara-Scheibe-Gasse,19,69985,Forchheim,CH,2019-05-08,Customer
+CUST000024,Trubin,Henckring,137,24751,Miltenberg,CH,2023-09-22,Customer
+CUST000025,ose,Claus-Dieter-Renner-Platz,119,25135,Ebermannstadt,AT,2023-06-11,FormerCustomer
+CUST000026,Ring Tlustek GmbH,Gloria-Röhrdanz-Ring,177,24118,Guben,CH,2024-01-03,FormerCustomer
+CUST000027,Schleich Häring Stiftung & Co. KG,Haaseweg,84,87401,Göppingen,DE,2023-11-25,Customer
+CUST000028,Adler GmbH,Fadime-Hesse-Platz,81,86801,Tübingen,AT,2023-06-20,Customer
+CUST000029,Ritter AG,Säuberlichstr.,55,62045,Kaiserslautern,CH,2022-12-10,Customer
+CUST000030,Stoll GbR,Nikolaus-Zahn-Weg,168,92322,Aue,AT,2022-01-12,FormerCustomer
+CUST000031,Walter GmbH,Staudeallee,118,42160,Gadebusch,DE,2023-07-02,Customer
+CUST000032,Mies GmbH,Heidrichplatz,64,36541,Jena,CH,2020-03-04,FormerCustomer
+CUST000033,Pechel,Stiebitzallee,68,1429,Bad Kissingen,CH,2019-11-30,Prospect
+CUST000034,Schenk GmHb & Co. KG,Vollbrechtallee,150,69816,Greiz,AT,2022-05-30,Customer
+CUST000035,Trommler GmbH & Co. KG,Annamaria-Renner-Allee,36,56159,Sternberg,CH,2020-12-07,Customer
+CUST000036,Tschentscher GmbH,Stahrstraße,194,64823,Stollberg,DE,2025-03-28,Customer
+CUST000037,Stey Weiß AG & Co. KGaA,Lachmannstr.,161,44369,Mühldorf am Inn,DE,2018-11-02,Prospect
+CUST000038,Margraf Steuer AG & Co. OHG,Wähnerplatz,153,48951,Suhl,DE,2022-02-25,Prospect
+CUST000039,Hecker Gumprich AG & Co. KG,Bastian-Henschel-Straße,153,76936,Lippstadt,AT,2020-07-14,Prospect
+CUST000040,Finke KGaA,Rosalinde-Weitzel-Gasse,142,32870,Cottbus,DE,2018-11-03,FormerCustomer
+CUST000041,Eimer itschke OHG mbH,Wendestraße,30,87277,Wolmirstedt,CH,2020-06-12,Prospect
+CUST000042,Schweitzer GbR,Schomberplatz,197,71434,Herzberg,CH,2022-08-27,Customer
+CUST000043,Butte,Gerard-Heinrich-Straße,76,31665,Lübeck,AT,2024-09-11,Prospect
+CUST000044,Haering GmbH & Co. KG,Winklerstr.,1,96705,Worbis,CH,2023-07-08,FormerCustomer
+CUST000045,Lindner Rennner Stiftung & Co. KGaA,Zoran-Hartmann-Ring,196,70656,Mühlhausen,DE,2020-10-10,Customer
+CUST000046,Scholtz KG,Senta-Kreusel-Weg,161,16272,Griesbach Rottal,AT,2019-04-21,FormerCustomer
+CUST000047,Junken Hahn GmbH & Co. KG,Kallertallee,156,46417,Wolgast,DE,2024-10-02,Prospect
+CUST000048,Birnbaum,Haufferweg,196,330,Gerolzhofen,DE,2020-06-02,FormerCustomer
+CUST000049,Mühle OHG mbH,Carmela-Harloff-Straße,1,52991,Heinsberg,CH,2022-11-01,Prospect
+CUST000050,Sager AG,Ruppertweg,5,63193,Uffenheim,DE,2022-05-26,Prospect
+CUST000051,Stolze Schinke e.V.,Louise-Rosemann-Gasse,62,86518,Anklam,DE,2023-10-08,FormerCustomer
+CUST000052,Niemeier Döring GmbH & Co. KG,Schusterallee,21,26284,Mühldorf am Inn,DE,2021-01-07,Customer
+CUST000053,Wagenknecht Scheel GbR,Henschelallee,195,47379,Husum,CH,2025-01-21,Customer
+CUST000054,Oderwald GmbH,Zoltan-Hahn-Ring,169,54948,Osterode am Harz,AT,2020-04-21,Customer
+CUST000055,Caspa rGbR,Niemeierstr.,68,77701,Gadebusch,CH,2019-09-01,Prospect
+CUST000056,Süßebier Henk GmbH,Mühlestr.,55,68557,Havelberg,CH,2018-09-25,Customer
+CUST000057,Heinrich Dussen van SStiftung & Co. KGaA,Mahmut-Dussen van-Allee,183,33749,Burgdorf,AT,2021-12-29,FormerCustomer
+CUST000058,Hübel GbR,Gießring,167,82400,Vechta,AT,2021-07-22,FormerCustomer
+CUST000059,Schweitzer e.G.,Dobesallee,116,94777,Erbisdorf,DE,2023-09-09,Customer
+CUST000060,Herrmann GmbH & Co. KGaA,Marie-Bolzmann-Straße,17,19022,Borna,AT,2026-03-26,FormerCustomer
+CUST000061,Drubin KG,auch Schlauchinstr.,142,86774,Havelberg,DE,2019-11-14,Customer
+CUST000062,Shcoll,Ekaterina-Warmer-Gasse,2,34123,Querfurt,DE,2018-07-13,FormerCustomer
+CUST000063,Franke AG,Mendeweg,16,40344,Bernburg,DE,2025-09-17,Customer
+CUST000064,Heintze,Zirmeallee,85,61832,Diepholz,DE,2020-09-14,Customer
+CUST000065,Bonbach AG & Co. KGaA,Scheibeweg,72,71746,Nördlingen,CH,2021-01-09,Customer
+CUST000066,Nohlmans,Buttestr.,139,65940,Geldern,DE,2020-01-25,FormerCustomer
+CUST000067,Ruppert,Kornelia-Steinberg-Ring,122,27874,Rothenburg ob der Tauber,DE,2021-03-01,Prospect
+CUST000068,Schuster Noack AG,Keudelstraße,49,51256,Hagenow,DE,2025-05-19,FormerCustomer
+CUST000069,Kühnert,Uli-Cichorius-Ring,111,51680,Lübben,AT,2021-09-20,Prospect
+CUST000070,Grf GmbH & Co. OHG,Scholtzallee,120,70348,Hagenow,CH,2025-11-11,FormerCustomer
+CUST000071,Thanel Neureuther AG,Yasemin-Schuchhardt-Weg,168,24808,Bremervörde,CH,2025-05-13,Customer
+CUST000072,Drewes GmbH & Co. KG,Friedericke-Fliegner-Straße,104,84677,Miesbach,CH,2022-08-31,Customer
+CUST000073,Fieibg,Grein Grothstr.,64,14658,Ahaus,DE,2024-05-02,FormerCustomer
+CUST000074,van der Dussen Huhn KG,Fischerstraße,115,55886,Hettstedt,DE,2021-09-26,Customer
+CUST000075,Thanel GbR,Heintzeallee,72,5766,Norden,AT,2023-09-01,Customer
+CUST000076,Eberth GmbH & Co. OHG,Ditschlerinallee,114,18702,Starnberg,CH,2025-05-15,Customer
+CUST000077,Bruder GmbH & Co. KGaA,Kambsstr.,167,15865,Potsdam,CH,2026-04-21,Customer
+CUST000078,Schönland AG,Eva-Stolze-Ring,193,16117,Uelzen,DE,2024-08-08,Prospect
+CUST000079,Baum Bien GmbH,Klaus-Michael-Klemt-Ring,125,23869,Eilenburg,AT,2024-01-27,Prospect
+CUST000080,Budig KG,Schollweg,16,79237,Mittweida,DE,2022-03-21,Customer
+CUST000081,Stahr Anders e.V.,Hövelweg,100,17594,Tübingen,AT,2021-05-14,Prospect
+CUST000082,Meyer Jacobi Jäckeel AG & Co. OHG,Nettegasse,109,69594,Aschaffenburg,CH,2020-03-27,FormerCustomer
+CUST000083,Kroker,Andersstr.,184,97439,Füssen,AT,2024-09-24,Customer
+CUST000084,Grein Groth,Stiebitzallee,76,10470,Wiedenbrück,DE,2025-10-24,FormerCustomer
+CUST000085,Conradi GmbH,Weinholdstraße,189,32858,Eckernförde,CH,2025-10-14,FormerCustomer
+CUST000086,Nerger Hübel Stiftung & Co. KGAa,Drewesstraße,81,23685,Lemgo,DE,2025-11-27,FormerCustomer
+CUST000087,Hettner KG,Uli-Koch-Allee,123,96513,Aue,CH,2020-07-06,Customer
+CUST000088,Rörricht,Schmidtplatz,15,74612,Bad Kissingen,CH,2025-07-27,Customer
+CUST000089,Nohlmans Drub AG,Reni-Renner-Platz,18,75869,Lübeck,CH,2025-09-15,FormerCustomer
+CUST000090,Dippel,Schmiedtstraße,61,5377,Karlsruhe,AT,2025-02-14,FormerCustomer
+CUST000091,Striebitz GmbH,Bolanderstraße,64,31713,Badibling,CH,2019-10-20,Customer
+CUST000092,Henk Ebertth e.V.,Charles-Wieloch-Weg,159,93352,Göppingen,DE,2021-10-07,FormerCustomer
+CUST000093,Ehlert KG,Gertzgasse,150,20539,Apolda,CH,2020-08-09,Prospect
+CUST000094,Hettner AG,Jolanthe-Linke-Weg,67,17758,Merseburg,DE,2018-12-16,FormerCustomer
+CUST000095,Hartun,Iwona-Ziegert-Allee,81,70076,Torgau,DE,2023-06-29,Prospect
+CUST000096,NNoack Stiftung & Co. KG,Briemergasse,34,92124,Kronach,CH,2019-03-26,Prospect
+CUST000097,Radisch,Metzstr.,118,11836,Geithain,AT,2025-08-27,Customer
+CUST000098,Kambs Metz GmbH,Vollbrechtgasse,118,65452,Bergzabern,CH,2020-02-26,Customer
+CUST000099,Caspr AG,Dietzweg,19,28098,Stuttgart,CH,2024-01-29,FormerCustomer
+CUST000100,Langern GmbH,Ullmanngasse,68,94519,Düren,DE,2022-07-22,Customer

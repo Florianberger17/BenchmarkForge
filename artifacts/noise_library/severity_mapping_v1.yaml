@@ -1,0 +1,16 @@
+severity_mapping:
+
+  low:
+    probability: 0.1
+    impact: minimal
+
+  medium:
+    probability: 0.3
+    impact: moderate
+
+  high:
+    probability: 0.6
+    impact: strong
+
+description: >
+  Defines how frequently noise patterns are applied.

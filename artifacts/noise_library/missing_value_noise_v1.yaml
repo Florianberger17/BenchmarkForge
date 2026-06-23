@@ -1,0 +1,25 @@
+noise_type: missing_value_noise_v1
+
+description: >
+  Removes field values completely to simulate incomplete records.
+
+applicable_fields:
+  - StreetAddress
+  - HouseNo
+  - ZipCode
+  - Town
+  - CountryCode
+  - LastOrderDate
+
+patterns:
+
+  - name: full_field_removal
+    description: Entire field is set to null
+    example:
+      input: "Berlin"
+      output: null
+
+severity_levels:
+  - low
+  - medium
+  - high

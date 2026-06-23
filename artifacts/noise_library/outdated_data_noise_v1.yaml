@@ -1,0 +1,26 @@
+noise_type: outdated_data_noise_v1
+
+description: >
+  Simulates stale or outdated business information.
+
+applicable_fields:
+  - LastOrderDate
+
+patterns:
+
+  - name: date_shift_backward
+    description: Moves date backwards by random years
+    example:
+      input: "2023-05-10"
+      output: "2018-05-10"
+
+  - name: stale_date_override
+    description: Replaces recent date with fixed old value
+    example:
+      input: "2024-01-01"
+      output: "2015-01-01"
+
+severity_levels:
+  - low
+  - medium
+  - high
