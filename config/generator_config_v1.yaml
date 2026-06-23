@@ -1,0 +1,11 @@
+dataset:
+
+  size: 100
+
+  seed: 42
+
+output:
+
+  format: csv
+
+  path: data/generated/customer_master_clean.csv
