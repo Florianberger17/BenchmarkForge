@@ -2,3 +2,13 @@ seed: 42
 noise_rate: 0.2
 
 target_field: CompanyName
+
+missing_value_rate: 0.1
+missing_fields:
+  - StreetAddress
+  - HouseNo
+  - ZipCode
+  - Town
+  - CountryCode
+
+outdated_value_rate: 0.1

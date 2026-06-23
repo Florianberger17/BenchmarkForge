@@ -14,6 +14,7 @@ from pathlib import Path
 import pandas as pd
 import random
 import yaml
+from outdated_value_injection import OutdatedValueInjector
 
 class NoiseEngine:
     """
@@ -36,11 +37,6 @@ class NoiseEngine:
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
 
-
-    # def inject_typo(self, value, suffix="X"):
-    #     if pd.isna(value):
-    #         return value
-    #     return str(value) + suffix
 
     def inject_typo(self, value, patterns):
 
@@ -70,6 +66,9 @@ class NoiseEngine:
 
         return value
 
+    def inject_missing_value(self, value):
+        return None
+
 
     def run(self):
 
@@ -83,7 +82,10 @@ class NoiseEngine:
 
         noise_rate = config["noise_rate"]
         target_field = config["target_field"]
-        # suffix = config["noise_suffix"]
+
+        # Missing value extension
+        missing_value_rate = config.get("missing_value_rate", 0.0)
+        missing_fields = config.get("missing_fields", [])
 
         project_root = Path(__file__).resolve().parents[2]
 
@@ -106,18 +108,6 @@ class NoiseEngine:
 
         target_field = config["target_field"]
         noise_rate = config["noise_rate"]
-        # suffix = config["noise_suffix"]
-
-        # if target_field in df.columns:
-
-        #     def apply_noise(value):
-
-        #         if random.random() < noise_rate:
-        #             return self.inject_typo(value, suffix)
-
-        #         return value
-
-        # df[target_field] = df[target_field].apply(apply_noise)
 
         if target_field in df.columns:
 
@@ -130,6 +120,29 @@ class NoiseEngine:
 
             df[target_field] = df[target_field].apply(apply_noise)
 
+
+        # Missing value injection
+        for field in missing_fields:
+
+            if field in df.columns:
+
+                def apply_missing(value):
+
+                    if random.random() < missing_value_rate:
+                        return self.inject_missing_value(value)
+
+                    return value
+
+                df[field] = df[field].apply(apply_missing)
+
+        # Outdated Value Injection
+        injector = OutdatedValueInjector(config["seed"])
+
+        df = injector.apply(
+            df,
+            rate=config.get("outdated_value_rate", 0.1),
+            field="LastOrderDate"
+        )
 
         df.to_csv(
             output_file,
