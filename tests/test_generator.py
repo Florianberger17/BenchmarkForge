@@ -66,3 +66,10 @@ def test_generation():
     assert len(records) > 0
 
     assert "CustNo" in records[0]
+
+
+if __name__ == "__main__":
+
+    test_generation()
+    
+    print("TEST PASSED")

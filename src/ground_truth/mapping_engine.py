@@ -6,34 +6,8 @@ Purpose:
     SOURCE_CUSTOMER_V1 → TARGET_ERP_CUSTOMER_V1.
 """
 
-from transformation_rules import TransformationRules
-
-# class MappingEngine:
-#     """
-#     Handles record-level transformations.
-#     """
-
-#     def transform_record(self, row: dict) -> dict:
-#         """
-#         Apply schema mapping rules to a single record.
-#         """
-
-#         street = row.get("StreetAddress", "")
-#         house_no = row.get("HouseNo", "")
-
-#         if house_no:
-#             street = f"{street} {house_no}"
-
-#         return {
-#             "CustomerID": row.get("CustNo"),
-#             "Name": row.get("CompanyName"),
-#             "Street": street if street else None,
-#             "City": row.get("Town"),
-#             "PostalCode": row.get("ZipCode"),
-#             "Country": row.get("CountryCode"),
-#             "LastBusinessActivityDate": row.get("LastOrderDate"),
-#             "Status": "active"
-#         }
+from src.ground_truth.transformation_rules import TransformationRules
+# from transformation_rules import TransformationRules        # Only for direct use via console
 
 class MappingEngine:
 

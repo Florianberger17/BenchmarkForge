@@ -8,32 +8,9 @@ Purpose:
 
 from pathlib import Path
 import pandas as pd
-# from src.ground_truth.mapping_engine import MappingEngine
-from mapping_engine import MappingEngine
+from src.ground_truth.mapping_engine import MappingEngine
+# from mapping_engine import MappingEngine      # Only for direct use via console
 import json
-
-
-# def transform_record(row: dict) -> dict:
-#     """
-#     Phase 2: Basic schema mapping (source → target).
-#     """
-
-#     street = row.get("StreetAddress", "")
-#     house_no = row.get("HouseNo", "")
-
-#     if house_no:
-#         street = f"{street} {house_no}"
-
-#     return {
-#         "CustomerID": row.get("CustNo"),
-#         "Name": row.get("CompanyName"),
-#         "Street": street if street else None,
-#         "City": row.get("Town"),
-#         "PostalCode": row.get("ZipCode"),
-#         "Country": row.get("CountryCode"),
-#         "LastBusinessActivityDate": row.get("LastOrderDate"),
-#         "Status": "active"  # temporary constant (Phase 2 simplification)
-#     }
 
 def main():
 

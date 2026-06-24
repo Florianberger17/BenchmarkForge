@@ -90,7 +90,7 @@ class SyntheticCustomerDataGenerator:
             exist_ok=True
         )
 
-        output_file.parent.mkdir(parents=True, exist_ok=True)
+        # output_file.parent.mkdir(parents=True, exist_ok=True)
 
         Exporter.to_csv(
             records,

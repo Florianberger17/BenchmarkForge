@@ -49,15 +49,15 @@ class FieldGenerators:
         random.seed(seed)
 
     def customer_number(self, index: int) -> str:
-    """
-    Generate a deterministic customer identifier.
+        """
+        Generate a deterministic customer identifier.
 
-    Args:
-        index (int): Sequential record index.
+        Args:
+            index (int): Sequential record index.
 
-    Returns:
-        str: Unique customer ID (e.g., CUST000001)
-    """
+        Returns:
+            str: Unique customer ID (e.g., CUST000001)
+        """
 
         return f"CUST{index:06d}"
 

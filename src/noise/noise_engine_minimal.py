@@ -14,7 +14,8 @@ from pathlib import Path
 import pandas as pd
 import random
 import yaml
-from outdated_value_injection import OutdatedValueInjector
+# from outdated_value_injection import OutdatedValueInjector # Only valid with direct start via console
+from src.noise.outdated_value_injection import OutdatedValueInjector
 
 class NoiseEngine:
     """
