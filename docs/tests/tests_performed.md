@@ -23,3 +23,6 @@
 - Mapping Metrics -> Bash: "python -m tests.test_mapping_metrics" -> Passed (2026/06/25)
 - Migration Metrics -> Bash: "python -m tests.test_migration_metrics" -> Passed (2026/06/25)
 - Metrics Aggregation -> Bash: "python -m tests.test_metrics" -> Passed (2026/06/25)
+
+## Pipeline Run:
+- Pipeline run incl. Logging -> Bash: "python run_pipeline.py" -> Run performed and Log-File saved (2026/06/25)

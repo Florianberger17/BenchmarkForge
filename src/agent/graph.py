@@ -66,26 +66,26 @@ def build_graph():
     return workflow.compile()
 
 
-# =========================================================
-# EXECUTION ENTRY POINT
-# =========================================================
+# # =========================================================
+# # EXECUTION ENTRY POINT
+# # =========================================================
 
-def run_pipeline():
+# def run_pipeline():
 
-    graph = build_graph()
+#     graph = build_graph()
 
-    initial_state = BenchmarkState()
+#     initial_state = BenchmarkState()
 
-    result = graph.invoke(initial_state)
+#     result = graph.invoke(initial_state)
 
-    print("\n====================================")
-    print("PIPELINE FINISHED")
-    print("====================================")
+#     print("\n====================================")
+#     print("PIPELINE FINISHED")
+#     print("====================================")
 
-    print(result)
+#     print(result)
 
-    return result
+#     return result
 
 
-if __name__ == "__main__":
-    run_pipeline()
+# if __name__ == "__main__":
+#     run_pipeline()

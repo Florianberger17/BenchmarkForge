@@ -1,0 +1,1010 @@
+{
+  "metadata": {
+    "dataset": "customer_master",
+    "source_schema": "SOURCE_CUSTOMER_V1",
+    "target_schema": "TARGET_ERP_CUSTOMER_V1",
+    "version": "1.0"
+  },
+  "records": [
+    {
+      "CustomerID": "CUST000001",
+      "Name": "Dowerg",
+      "Street": "Jolanta-Höfig-Platz 164",
+      "City": "Backnang",
+      "PostalCode": 21819,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2026-03-14",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000002",
+      "Name": "Davids AG & Co. OHG",
+      "Street": "Alwine-Schleich-Gasse 71",
+      "City": "Altötting",
+      "PostalCode": 86379,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2023-12-23",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000003",
+      "Name": "Thanel GmbH & Co. KG",
+      "Street": "Holstenplatz 189",
+      "City": "Ilmenau",
+      "PostalCode": 51161,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2018-11-22",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000004",
+      "Name": "Hettner",
+      "Street": "Janet-Mies-Weg 140",
+      "City": "Roding",
+      "PostalCode": 61849,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2019-11-10",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000005",
+      "Name": "Tlustek AG",
+      "Street": "Gesche-Heidrich-Ring 9",
+      "City": "Eberswalde",
+      "PostalCode": 31647,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2025-06-06",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000006",
+      "Name": "Klapp Häring OHG mbH",
+      "Street": "Tintzmannweg 60",
+      "City": "Konstanz",
+      "PostalCode": 92832,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2019-09-24",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000007",
+      "Name": "Schwital Stroh KG",
+      "Street": "Hedy-Junk-Gasse 144",
+      "City": "Reutlingen",
+      "PostalCode": 5641,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2019-03-12",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000008",
+      "Name": "Jopich",
+      "Street": "Gerdi-Ortmann-Straße 140",
+      "City": "Wolfratshausen",
+      "PostalCode": 24238,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2024-01-04",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000009",
+      "Name": "Lorch",
+      "Street": "Klotzplatz 151",
+      "City": "Sebnitz",
+      "PostalCode": 87101,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2026-05-29",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000010",
+      "Name": "Zorbach OHG mbH",
+      "Street": "Schenkgasse 179",
+      "City": "Tecklenburg",
+      "PostalCode": 69784,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2022-08-31",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000011",
+      "Name": "Drewes",
+      "Street": "Wilmsenweg 40",
+      "City": "Werdau",
+      "PostalCode": 14627,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2022-09-15",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000012",
+      "Name": "Hesse",
+      "Street": "Ana-Döring-Allee 24",
+      "City": "Plauen",
+      "PostalCode": 89325,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2025-05-24",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000013",
+      "Name": "Ackermann",
+      "Street": "Niemeiergasse 89",
+      "City": "Borna",
+      "PostalCode": 54303,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2023-07-07",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000014",
+      "Name": "Neureuther",
+      "Street": "Zofia-Wesack-Weg 187",
+      "City": "Freudenstadt",
+      "PostalCode": 27824,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2020-06-19",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000015",
+      "Name": "Wende",
+      "Street": "Ingried-Jockel-Straße 97",
+      "City": "Belzig",
+      "PostalCode": 78713,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2020-04-15",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000016",
+      "Name": "Bärer Schacht KG",
+      "Street": "Dajana-Hartmann-Gasse 161",
+      "City": "Osterburg",
+      "PostalCode": 3105,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2022-06-04",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000017",
+      "Name": "Holsten OHG mbH",
+      "Street": "Hamannstr. 50",
+      "City": "Erkelenz",
+      "PostalCode": 99737,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-09-13",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000018",
+      "Name": "Dietz OHG mbH",
+      "Street": "Klappstraße 170",
+      "City": "Bützow",
+      "PostalCode": 70106,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2023-03-27",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000019",
+      "Name": "Gröttner AG & Co. OHG",
+      "Street": "Etzoldstraße 60",
+      "City": "Badibling",
+      "PostalCode": 47317,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2022-03-21",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000020",
+      "Name": "Reuter",
+      "Street": "Wenke-Davids-Platz 117",
+      "City": "Eckernförde",
+      "PostalCode": 67736,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2022-05-22",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000021",
+      "Name": "Adler Krebs GbR",
+      "Street": "Hörlestraße 95",
+      "City": "Wolfratshausen",
+      "PostalCode": 23430,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2024-02-17",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000022",
+      "Name": "Bohlander Binner KG",
+      "Street": "Paffrathallee 69",
+      "City": "Sulzbach-Rosenberg",
+      "PostalCode": 8121,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2018-10-25",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000023",
+      "Name": "Kusch AG",
+      "Street": "Clara-Scheibe-Gasse 19",
+      "City": "Forchheim",
+      "PostalCode": 69985,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2019-05-12",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000024",
+      "Name": "Trubin",
+      "Street": "Henckring 137",
+      "City": "Miltenberg",
+      "PostalCode": 24751,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2023-09-26",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000025",
+      "Name": "Rose",
+      "Street": "Claus-Dieter-Renner-Platz 119",
+      "City": "Ebermannstadt",
+      "PostalCode": 25135,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2023-06-15",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000026",
+      "Name": "Ring Tlustek GmbH",
+      "Street": "Gloria-Röhrdanz-Ring 177",
+      "City": "Guben",
+      "PostalCode": 24118,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2024-01-07",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000027",
+      "Name": "Schleich Häring Stiftung & Co. KG",
+      "Street": "Haaseweg 84",
+      "City": "Göppingen",
+      "PostalCode": 87401,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2023-11-29",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000028",
+      "Name": "Adler GmbH",
+      "Street": "Fadime-Hesse-Platz 81",
+      "City": "Tübingen",
+      "PostalCode": 86801,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2023-06-24",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000029",
+      "Name": "Ritter AG",
+      "Street": "Säuberlichstr. 55",
+      "City": "Kaiserslautern",
+      "PostalCode": 62045,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2022-12-14",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000030",
+      "Name": "Stoll GbR",
+      "Street": "Nikolaus-Zahn-Weg 168",
+      "City": "Aue",
+      "PostalCode": 92322,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2022-01-16",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000031",
+      "Name": "Walter GmbH",
+      "Street": "Staudeallee 118",
+      "City": "Gadebusch",
+      "PostalCode": 42160,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2023-07-06",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000032",
+      "Name": "Mies GmbH",
+      "Street": "Heidrichplatz 64",
+      "City": "Jena",
+      "PostalCode": 36541,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2020-03-08",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000033",
+      "Name": "Pechel",
+      "Street": "Stiebitzallee 68",
+      "City": "Bad Kissingen",
+      "PostalCode": 1429,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2019-12-04",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000034",
+      "Name": "Schenk GmbH & Co. KG",
+      "Street": "Vollbrechtallee 150",
+      "City": "Greiz",
+      "PostalCode": 69816,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2022-06-03",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000035",
+      "Name": "Trommler GmbH & Co. KG",
+      "Street": "Annamaria-Renner-Allee 36",
+      "City": "Sternberg",
+      "PostalCode": 56159,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2020-12-11",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000036",
+      "Name": "Tschentscher GmbH",
+      "Street": "Stahrstraße 194",
+      "City": "Stollberg",
+      "PostalCode": 64823,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2025-04-01",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000037",
+      "Name": "Stey Weiß AG & Co. KGaA",
+      "Street": "Lachmannstr. 161",
+      "City": "Mühldorf am Inn",
+      "PostalCode": 44369,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2018-11-06",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000038",
+      "Name": "Margraf Steuer AG & Co. OHG",
+      "Street": "Wähnerplatz 153",
+      "City": "Suhl",
+      "PostalCode": 48951,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2022-03-01",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000039",
+      "Name": "Hecker Gumprich AG & Co. KG",
+      "Street": "Bastian-Henschel-Straße 153",
+      "City": "Lippstadt",
+      "PostalCode": 76936,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2020-07-18",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000040",
+      "Name": "Finke KGaA",
+      "Street": "Rosalinde-Weitzel-Gasse 142",
+      "City": "Cottbus",
+      "PostalCode": 32870,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2018-11-07",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000041",
+      "Name": "Eimer Mitschke OHG mbH",
+      "Street": "Wendestraße 30",
+      "City": "Wolmirstedt",
+      "PostalCode": 87277,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2020-06-16",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000042",
+      "Name": "Schweitzer GbR",
+      "Street": "Schomberplatz 197",
+      "City": "Herzberg",
+      "PostalCode": 71434,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2022-08-31",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000043",
+      "Name": "Butte",
+      "Street": "Gerard-Heinrich-Straße 76",
+      "City": "Lübeck",
+      "PostalCode": 31665,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2024-09-15",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000044",
+      "Name": "Haering GmbH & Co. KG",
+      "Street": "Winklerstr. 1",
+      "City": "Worbis",
+      "PostalCode": 96705,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2023-07-12",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000045",
+      "Name": "Lindner Renner Stiftung & Co. KGaA",
+      "Street": "Zoran-Hartmann-Ring 196",
+      "City": "Mühlhausen",
+      "PostalCode": 70656,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2020-10-14",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000046",
+      "Name": "Scholtz KG",
+      "Street": "Senta-Kreusel-Weg 161",
+      "City": "Griesbach Rottal",
+      "PostalCode": 16272,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2019-04-25",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000047",
+      "Name": "Junken Hahn GmbH & Co. KG",
+      "Street": "Kallertallee 156",
+      "City": "Wolgast",
+      "PostalCode": 46417,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2024-10-06",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000048",
+      "Name": "Birnbaum",
+      "Street": "Haufferweg 196",
+      "City": "Gerolzhofen",
+      "PostalCode": 330,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2020-06-06",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000049",
+      "Name": "Mühle OHG mbH",
+      "Street": "Carmela-Harloff-Straße 1",
+      "City": "Heinsberg",
+      "PostalCode": 52991,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2022-11-05",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000050",
+      "Name": "Sager AG",
+      "Street": "Ruppertweg 5",
+      "City": "Uffenheim",
+      "PostalCode": 63193,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2022-05-30",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000051",
+      "Name": "Stolze Schinke e.V.",
+      "Street": "Louise-Rosemann-Gasse 62",
+      "City": "Anklam",
+      "PostalCode": 86518,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2023-10-12",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000052",
+      "Name": "Niemeier Döring GmbH & Co. KG",
+      "Street": "Schusterallee 21",
+      "City": "Mühldorf am Inn",
+      "PostalCode": 26284,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2021-01-11",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000053",
+      "Name": "Wagenknecht Scheel GbR",
+      "Street": "Henschelallee 195",
+      "City": "Husum",
+      "PostalCode": 47379,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-01-25",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000054",
+      "Name": "Oderwald GmbH",
+      "Street": "Zoltan-Hahn-Ring 169",
+      "City": "Osterode am Harz",
+      "PostalCode": 54948,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2020-04-25",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000055",
+      "Name": "Caspar GbR",
+      "Street": "Niemeierstr. 68",
+      "City": "Gadebusch",
+      "PostalCode": 77701,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2019-09-05",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000056",
+      "Name": "Süßebier Henk GmbH",
+      "Street": "Mühlestr. 55",
+      "City": "Havelberg",
+      "PostalCode": 68557,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2018-09-29",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000057",
+      "Name": "Heinrich Dussen van Stiftung & Co. KGaA",
+      "Street": "Mahmut-Dussen van-Allee 183",
+      "City": "Burgdorf",
+      "PostalCode": 33749,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2022-01-02",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000058",
+      "Name": "Hübel GbR",
+      "Street": "Gießring 167",
+      "City": "Vechta",
+      "PostalCode": 82400,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2021-07-26",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000059",
+      "Name": "Schweitzer e.G.",
+      "Street": "Dobesallee 116",
+      "City": "Erbisdorf",
+      "PostalCode": 94777,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2023-09-13",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000060",
+      "Name": "Herrmann GmbH & Co. KGaA",
+      "Street": "Marie-Bolzmann-Straße 17",
+      "City": "Borna",
+      "PostalCode": 19022,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2026-03-30",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000061",
+      "Name": "Drubin KG",
+      "Street": "auch Schlauchinstr. 142",
+      "City": "Havelberg",
+      "PostalCode": 86774,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2019-11-18",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000062",
+      "Name": "Scholl",
+      "Street": "Ekaterina-Warmer-Gasse 2",
+      "City": "Querfurt",
+      "PostalCode": 34123,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2018-07-17",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000063",
+      "Name": "Franke AG",
+      "Street": "Mendeweg 16",
+      "City": "Bernburg",
+      "PostalCode": 40344,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2025-09-21",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000064",
+      "Name": "Heintze",
+      "Street": "Zirmeallee 85",
+      "City": "Diepholz",
+      "PostalCode": 61832,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2020-09-18",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000065",
+      "Name": "Bonbach AG & Co. KGaA",
+      "Street": "Scheibeweg 72",
+      "City": "Nördlingen",
+      "PostalCode": 71746,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2021-01-13",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000066",
+      "Name": "Nohlmans",
+      "Street": "Buttestr. 139",
+      "City": "Geldern",
+      "PostalCode": 65940,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2020-01-29",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000067",
+      "Name": "Ruppert",
+      "Street": "Kornelia-Steinberg-Ring 122",
+      "City": "Rothenburg ob der Tauber",
+      "PostalCode": 27874,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2021-03-05",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000068",
+      "Name": "Schuster Noack AG",
+      "Street": "Keudelstraße 49",
+      "City": "Hagenow",
+      "PostalCode": 51256,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2025-05-23",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000069",
+      "Name": "Kühnert",
+      "Street": "Uli-Cichorius-Ring 111",
+      "City": "Lübben",
+      "PostalCode": 51680,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2021-09-24",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000070",
+      "Name": "Graf GmbH & Co. OHG",
+      "Street": "Scholtzallee 120",
+      "City": "Hagenow",
+      "PostalCode": 70348,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-11-15",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000071",
+      "Name": "Thanel Neureuther AG",
+      "Street": "Yasemin-Schuchhardt-Weg 168",
+      "City": "Bremervörde",
+      "PostalCode": 24808,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-05-17",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000072",
+      "Name": "Drewes GmbH & Co. KG",
+      "Street": "Friedericke-Fliegner-Straße 104",
+      "City": "Miesbach",
+      "PostalCode": 84677,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2022-09-04",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000073",
+      "Name": "Fiebig",
+      "Street": "Grein Grothstr. 64",
+      "City": "Ahaus",
+      "PostalCode": 14658,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2024-05-06",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000074",
+      "Name": "van der Dussen Huhn KG",
+      "Street": "Fischerstraße 115",
+      "City": "Hettstedt",
+      "PostalCode": 55886,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2021-09-30",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000075",
+      "Name": "Thanel GbR",
+      "Street": "Heintzeallee 72",
+      "City": "Norden",
+      "PostalCode": 5766,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2023-09-05",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000076",
+      "Name": "Eberth GmbH & Co. OHG",
+      "Street": "Ditschlerinallee 114",
+      "City": "Starnberg",
+      "PostalCode": 18702,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-05-19",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000077",
+      "Name": "Bruder GmbH & Co. KGaA",
+      "Street": "Kambsstr. 167",
+      "City": "Potsdam",
+      "PostalCode": 15865,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2026-04-25",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000078",
+      "Name": "Schönland AG",
+      "Street": "Eva-Stolze-Ring 193",
+      "City": "Uelzen",
+      "PostalCode": 16117,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2024-08-12",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000079",
+      "Name": "Baum Bien GmbH",
+      "Street": "Klaus-Michael-Klemt-Ring 125",
+      "City": "Eilenburg",
+      "PostalCode": 23869,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2024-01-31",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000080",
+      "Name": "Budig KG",
+      "Street": "Schollweg 16",
+      "City": "Mittweida",
+      "PostalCode": 79237,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2022-03-25",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000081",
+      "Name": "Stahr Anders e.V.",
+      "Street": "Hövelweg 100",
+      "City": "Tübingen",
+      "PostalCode": 17594,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2021-05-18",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000082",
+      "Name": "Meyer Jacobi Jäckel AG & Co. OHG",
+      "Street": "Nettegasse 109",
+      "City": "Aschaffenburg",
+      "PostalCode": 69594,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2020-03-31",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000083",
+      "Name": "Kroker",
+      "Street": "Andersstr. 184",
+      "City": "Füssen",
+      "PostalCode": 97439,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2024-09-28",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000084",
+      "Name": "Grein Groth",
+      "Street": "Stiebitzallee 76",
+      "City": "Wiedenbrück",
+      "PostalCode": 10470,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2025-10-28",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000085",
+      "Name": "Conradi GmbH",
+      "Street": "Weinholdstraße 189",
+      "City": "Eckernförde",
+      "PostalCode": 32858,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-10-18",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000086",
+      "Name": "Nerger Hübel Stiftung & Co. KGaA",
+      "Street": "Drewesstraße 81",
+      "City": "Lemgo",
+      "PostalCode": 23685,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2025-12-01",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000087",
+      "Name": "Hettner KG",
+      "Street": "Uli-Koch-Allee 123",
+      "City": "Aue",
+      "PostalCode": 96513,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2020-07-10",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000088",
+      "Name": "Rörricht",
+      "Street": "Schmidtplatz 15",
+      "City": "Bad Kissingen",
+      "PostalCode": 74612,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-07-31",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000089",
+      "Name": "Nohlmans Drub AG",
+      "Street": "Reni-Renner-Platz 18",
+      "City": "Lübeck",
+      "PostalCode": 75869,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2025-09-19",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000090",
+      "Name": "Dippel",
+      "Street": "Schmiedtstraße 61",
+      "City": "Karlsruhe",
+      "PostalCode": 5377,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2025-02-18",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000091",
+      "Name": "Striebitz GmbH",
+      "Street": "Bolanderstraße 64",
+      "City": "Badibling",
+      "PostalCode": 31713,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2019-10-24",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000092",
+      "Name": "Henk Eberth e.V.",
+      "Street": "Charles-Wieloch-Weg 159",
+      "City": "Göppingen",
+      "PostalCode": 93352,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2021-10-11",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000093",
+      "Name": "Ehlert KG",
+      "Street": "Gertzgasse 150",
+      "City": "Apolda",
+      "PostalCode": 20539,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2020-08-13",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000094",
+      "Name": "Hettner AG",
+      "Street": "Jolanthe-Linke-Weg 67",
+      "City": "Merseburg",
+      "PostalCode": 17758,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2018-12-20",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000095",
+      "Name": "Hartung",
+      "Street": "Iwona-Ziegert-Allee 81",
+      "City": "Torgau",
+      "PostalCode": 70076,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2023-07-03",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000096",
+      "Name": "Noack Stiftung & Co. KG",
+      "Street": "Briemergasse 34",
+      "City": "Kronach",
+      "PostalCode": 92124,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2019-03-30",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000097",
+      "Name": "Radisch",
+      "Street": "Metzstr. 118",
+      "City": "Geithain",
+      "PostalCode": 11836,
+      "Country": "AUT",
+      "LastBusinessActivityDate": "2025-08-31",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000098",
+      "Name": "Kambs Metz GmbH",
+      "Street": "Vollbrechtgasse 118",
+      "City": "Bergzabern",
+      "PostalCode": 65452,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2020-03-01",
+      "Status": "inactive"
+    },
+    {
+      "CustomerID": "CUST000099",
+      "Name": "Caspar AG",
+      "Street": "Dietzweg 19",
+      "City": "Stuttgart",
+      "PostalCode": 28098,
+      "Country": "CHE",
+      "LastBusinessActivityDate": "2024-02-02",
+      "Status": "active"
+    },
+    {
+      "CustomerID": "CUST000100",
+      "Name": "Langern GmbH",
+      "Street": "Ullmanngasse 68",
+      "City": "Düren",
+      "PostalCode": 94519,
+      "Country": "DEU",
+      "LastBusinessActivityDate": "2022-07-26",
+      "Status": "inactive"
+    }
+  ]
+}
