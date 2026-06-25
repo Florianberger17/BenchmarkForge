@@ -16,3 +16,10 @@
 ## Nodes & Agent Workflow:
 - Scenario Node -> Bash: "python tests/nodes/test_scenario_node.py" -> Passed (2026/06/24)
 - Dataset Node -> Bash: "python tests/nodes/test_dataset_node.py" -> Passed (2026/06/24)
+- Noise Node -> Bash: "python tests/nodes/test_noise_node.py"
+- Ground Truth Node -> Bash: "python tests/nodes/test_ground_truth_node.py"
+
+## Evaluation:
+- Mapping Metrics -> Bash: "python -m tests.test_mapping_metrics" -> Passed (2026/06/25)
+- Migration Metrics -> Bash: "python -m tests.test_migration_metrics" -> Passed (2026/06/25)
+- Metrics Aggregation -> Bash: "python -m tests.test_metrics" -> Passed (2026/06/25)
