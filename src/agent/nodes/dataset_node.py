@@ -1,4 +1,6 @@
 from pathlib import Path
+import pandas as pd
+import os
 
 from src.synthetic_data.generator_tool import SyntheticCustomerDataGenerator
 from src.agent.state import BenchmarkState
@@ -54,14 +56,34 @@ class DatasetNode:
         # -----------------------------------------------------
         # 3. SAFE STATE ACCESS (FIX)
         # -----------------------------------------------------
+        # scenario = state.scenario or {}
+
+        # # -----------------------------------------------------
+        # # 4. Inject into state
+        # # -----------------------------------------------------
+        # return {
+        #     "dataset_clean": records,
+
+        #     # FIX: safe access via local variable
+        #     "dataset_path_clean": scenario.get("source_dataset", None),
+        # }
+
+
+        # 3. SAFE STATE ACCESS
         scenario = state.scenario or {}
 
-        # -----------------------------------------------------
-        # 4. Inject into state
-        # -----------------------------------------------------
-        return {
-            "dataset_clean": records,
+        # 4. WRITE CLEAN DATASET TO FILE
+        output_path = "data/generated/customer_master_clean.csv"
 
-            # FIX: safe access via local variable
-            "dataset_path_clean": scenario.get("source_dataset", None),
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        pd.DataFrame(records).to_csv(output_path, index=False)
+
+        # 5. RETURN CONSISTENT ARTIFACT CONTRACT
+#         return {
+#             "dataset_clean": records,
+#             "dataset_path_clean": output_path
+# }
+        return {
+            "dataset_path_clean": "data/generated/customer_master_clean.csv"
         }

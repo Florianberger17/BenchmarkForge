@@ -1,0 +1,12 @@
+scenario_id: ERP_CUSTOMER_MIGRATION_V1
+
+description: "Customer master data migration benchmark"
+
+source_dataset: data/generated/customer_master_dirty.csv
+ground_truth: data/generated/customer_master_ground_truth.json
+
+schema_mapping:
+  source_schema_path: artifacts/schema/source_customer_schema_v1.yaml
+  target_schema_path: artifacts/schema/target_erp_customer_schema_v1.yaml
+
+task_type: customer_migration

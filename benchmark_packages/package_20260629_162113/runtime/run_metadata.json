@@ -1,0 +1,17 @@
+{
+  "generated_by": "BenchmarkForge",
+  "created_at": "2026-06-29T16:21:13.840182",
+  "source_run_keys": [
+    "scenario",
+    "scenario_id",
+    "task_type",
+    "source_schema",
+    "target_schema",
+    "dataset_path_clean",
+    "dataset_path_dirty",
+    "noise_applied",
+    "ground_truth_path",
+    "seed",
+    "logs"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "package_id": "package_20260629_151339",
+  "created_at": "2026-06-29T15:13:39.846944",
+  "source_run_keys": [
+    "scenario",
+    "scenario_id",
+    "task_type",
+    "source_schema",
+    "target_schema",
+    "dataset_clean",
+    "dataset_path_clean",
+    "dataset_path_dirty",
+    "noise_applied",
+    "ground_truth_path",
+    "seed",
+    "logs"
+  ]
+}

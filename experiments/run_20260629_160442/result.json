@@ -1,0 +1,1292 @@
+{
+  "scenario": {
+    "scenario_id": "ERP_CUSTOMER_MIGRATION_V1",
+    "description": "Customer master data migration benchmark",
+    "source_dataset": "data/generated/customer_master_dirty.csv",
+    "ground_truth": "data/generated/customer_master_ground_truth.json",
+    "schema_mapping": {
+      "source_schema_path": "artifacts/schema/source_customer_schema_v1.yaml",
+      "target_schema_path": "artifacts/schema/target_erp_customer_schema_v1.yaml"
+    },
+    "task_type": "customer_migration"
+  },
+  "scenario_id": "ERP_CUSTOMER_MIGRATION_V1",
+  "task_type": "customer_migration",
+  "source_schema": {
+    "schema_id": "SOURCE_CUSTOMER_V1",
+    "name": "Legacy ERP Customer Schema",
+    "domain": "ERP Customer Master Data",
+    "entity": "Customer",
+    "version": 1.0,
+    "description": "Structural schema definition for customer master data in a legacy ERP system. This schema defines only data structure, not data quality characteristics.\n",
+    "attributes": [
+      {
+        "name": "CustNo",
+        "type": "string",
+        "required": true,
+        "unique": true,
+        "description": "Unique customer identifier"
+      },
+      {
+        "name": "CompanyName",
+        "type": "string",
+        "required": true,
+        "description": "Name of the customer organization"
+      },
+      {
+        "name": "StreetAddress",
+        "type": "string",
+        "required": false,
+        "description": "Street"
+      },
+      {
+        "name": "HouseNo",
+        "type": "string",
+        "required": false,
+        "description": "house number"
+      },
+      {
+        "name": "ZipCode",
+        "type": "string",
+        "required": false,
+        "description": "Postal code"
+      },
+      {
+        "name": "Town",
+        "type": "string",
+        "required": false,
+        "description": "City or municipality"
+      },
+      {
+        "name": "CountryCode",
+        "type": "string",
+        "required": false,
+        "description": "Country identifier"
+      },
+      {
+        "name": "LastOrderDate",
+        "type": "date",
+        "required": false,
+        "description": "Date of last recorded business transaction"
+      },
+      {
+        "name": "CustomerType",
+        "type": "string",
+        "required": false,
+        "description": "Type of customer entity"
+      }
+    ],
+    "constraints": [
+      {
+        "id": "CON-SRC-001",
+        "description": "CustNo must be unique"
+      },
+      {
+        "id": "CON-SRC-002",
+        "description": "CompanyName must be provided"
+      }
+    ],
+    "used_by": [
+      "Synthetic Data Generator",
+      "Schema Mapping Activity",
+      "Ground Truth Generation",
+      "Evaluation Engine"
+    ]
+  },
+  "target_schema": {
+    "schema_id": "TARGET_ERP_CUSTOMER_V1",
+    "name": "Target ERP Customer Schema",
+    "domain": "ERP Customer Master Data",
+    "entity": "Customer",
+    "version": 1.0,
+    "attributes": [
+      {
+        "name": "CustomerID",
+        "type": "string",
+        "required": true,
+        "unique": true
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "Street",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "City",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "PostalCode",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "Country",
+        "type": "string",
+        "required": true,
+        "format": "ISO-3166 alpha-3"
+      },
+      {
+        "name": "Email",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "LastBusinessActivityDate",
+        "type": "date",
+        "required": true
+      },
+      {
+        "name": "Status",
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "active",
+          "inactive"
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "id": "CON-001",
+        "description": "CustomerID must be unique"
+      },
+      {
+        "id": "CON-002",
+        "description": "Name must not be empty"
+      },
+      {
+        "id": "CON-003",
+        "description": "Country must follow ISO 3166 alpha-3 format"
+      },
+      {
+        "id": "CON-004",
+        "description": "Status must be active or inactive"
+      },
+      {
+        "id": "CON-005",
+        "description": "Active customers must have LastBusinessActivityDate"
+      }
+    ],
+    "used_by": [
+      "Schema Mapping",
+      "Data Validation",
+      "Ground Truth Generation",
+      "Evaluation"
+    ]
+  },
+  "dataset_clean": [
+    {
+      "CustNo": "CUST000001",
+      "CompanyName": "Dowerg",
+      "StreetAddress": "Jolanta-H\u00f6fig-Platz",
+      "HouseNo": "164",
+      "ZipCode": "21819",
+      "Town": "Backnang",
+      "CountryCode": "DE",
+      "LastOrderDate": "2026-03-19",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000002",
+      "CompanyName": "Davids AG & Co. OHG",
+      "StreetAddress": "Alwine-Schleich-Gasse",
+      "HouseNo": "71",
+      "ZipCode": "86379",
+      "Town": "Alt\u00f6tting",
+      "CountryCode": "DE",
+      "LastOrderDate": "2023-12-28",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000003",
+      "CompanyName": "Thanel GmbH & Co. KG",
+      "StreetAddress": "Holstenplatz",
+      "HouseNo": "189",
+      "ZipCode": "51161",
+      "Town": "Ilmenau",
+      "CountryCode": "DE",
+      "LastOrderDate": "2018-11-27",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000004",
+      "CompanyName": "Hettner",
+      "StreetAddress": "Janet-Mies-Weg",
+      "HouseNo": "140",
+      "ZipCode": "61849",
+      "Town": "Roding",
+      "CountryCode": "DE",
+      "LastOrderDate": "2019-11-15",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000005",
+      "CompanyName": "Tlustek AG",
+      "StreetAddress": "Gesche-Heidrich-Ring",
+      "HouseNo": "9",
+      "ZipCode": "31647",
+      "Town": "Eberswalde",
+      "CountryCode": "DE",
+      "LastOrderDate": "2025-06-11",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000006",
+      "CompanyName": "Klapp H\u00e4ring OHG mbH",
+      "StreetAddress": "Tintzmannweg",
+      "HouseNo": "60",
+      "ZipCode": "92832",
+      "Town": "Konstanz",
+      "CountryCode": "CH",
+      "LastOrderDate": "2019-09-29",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000007",
+      "CompanyName": "Schwital Stroh KG",
+      "StreetAddress": "Hedy-Junk-Gasse",
+      "HouseNo": "144",
+      "ZipCode": "05641",
+      "Town": "Reutlingen",
+      "CountryCode": "DE",
+      "LastOrderDate": "2019-03-17",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000008",
+      "CompanyName": "Jopich",
+      "StreetAddress": "Gerdi-Ortmann-Stra\u00dfe",
+      "HouseNo": "140",
+      "ZipCode": "24238",
+      "Town": "Wolfratshausen",
+      "CountryCode": "AT",
+      "LastOrderDate": "2024-01-09",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000009",
+      "CompanyName": "Lorch",
+      "StreetAddress": "Klotzplatz",
+      "HouseNo": "151",
+      "ZipCode": "87101",
+      "Town": "Sebnitz",
+      "CountryCode": "AT",
+      "LastOrderDate": "2026-06-03",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000010",
+      "CompanyName": "Zorbach OHG mbH",
+      "StreetAddress": "Schenkgasse",
+      "HouseNo": "179",
+      "ZipCode": "69784",
+      "Town": "Tecklenburg",
+      "CountryCode": "AT",
+      "LastOrderDate": "2022-09-05",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000011",
+      "CompanyName": "Drewes",
+      "StreetAddress": "Wilmsenweg",
+      "HouseNo": "40",
+      "ZipCode": "14627",
+      "Town": "Werdau",
+      "CountryCode": "DE",
+      "LastOrderDate": "2022-09-20",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000012",
+      "CompanyName": "Hesse",
+      "StreetAddress": "Ana-D\u00f6ring-Allee",
+      "HouseNo": "24",
+      "ZipCode": "89325",
+      "Town": "Plauen",
+      "CountryCode": "AT",
+      "LastOrderDate": "2025-05-29",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000013",
+      "CompanyName": "Ackermann",
+      "StreetAddress": "Niemeiergasse",
+      "HouseNo": "89",
+      "ZipCode": "54303",
+      "Town": "Borna",
+      "CountryCode": "CH",
+      "LastOrderDate": "2023-07-12",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000014",
+      "CompanyName": "Neureuther",
+      "StreetAddress": "Zofia-Wesack-Weg",
+      "HouseNo": "187",
+      "ZipCode": "27824",
+      "Town": "Freudenstadt",
+      "CountryCode": "AT",
+      "LastOrderDate": "2020-06-24",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000015",
+      "CompanyName": "Wende",
+      "StreetAddress": "Ingried-Jockel-Stra\u00dfe",
+      "HouseNo": "97",
+      "ZipCode": "78713",
+      "Town": "Belzig",
+      "CountryCode": "DE",
+      "LastOrderDate": "2020-04-20",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000016",
+      "CompanyName": "B\u00e4rer Schacht KG",
+      "StreetAddress": "Dajana-Hartmann-Gasse",
+      "HouseNo": "161",
+      "ZipCode": "03105",
+      "Town": "Osterburg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2022-06-09",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000017",
+      "CompanyName": "Holsten OHG mbH",
+      "StreetAddress": "Hamannstr.",
+      "HouseNo": "50",
+      "ZipCode": "99737",
+      "Town": "Erkelenz",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-09-18",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000018",
+      "CompanyName": "Dietz OHG mbH",
+      "StreetAddress": "Klappstra\u00dfe",
+      "HouseNo": "170",
+      "ZipCode": "70106",
+      "Town": "B\u00fctzow",
+      "CountryCode": "DE",
+      "LastOrderDate": "2023-04-01",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000019",
+      "CompanyName": "Gr\u00f6ttner AG & Co. OHG",
+      "StreetAddress": "Etzoldstra\u00dfe",
+      "HouseNo": "60",
+      "ZipCode": "47317",
+      "Town": "Badibling",
+      "CountryCode": "DE",
+      "LastOrderDate": "2022-03-26",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000020",
+      "CompanyName": "Reuter",
+      "StreetAddress": "Wenke-Davids-Platz",
+      "HouseNo": "117",
+      "ZipCode": "67736",
+      "Town": "Eckernf\u00f6rde",
+      "CountryCode": "CH",
+      "LastOrderDate": "2022-05-27",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000021",
+      "CompanyName": "Adler Krebs GbR",
+      "StreetAddress": "H\u00f6rlestra\u00dfe",
+      "HouseNo": "95",
+      "ZipCode": "23430",
+      "Town": "Wolfratshausen",
+      "CountryCode": "AT",
+      "LastOrderDate": "2024-02-22",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000022",
+      "CompanyName": "Bohlander Binner KG",
+      "StreetAddress": "Paffrathallee",
+      "HouseNo": "69",
+      "ZipCode": "08121",
+      "Town": "Sulzbach-Rosenberg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2018-10-30",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000023",
+      "CompanyName": "Kusch AG",
+      "StreetAddress": "Clara-Scheibe-Gasse",
+      "HouseNo": "19",
+      "ZipCode": "69985",
+      "Town": "Forchheim",
+      "CountryCode": "CH",
+      "LastOrderDate": "2019-05-17",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000024",
+      "CompanyName": "Trubin",
+      "StreetAddress": "Henckring",
+      "HouseNo": "137",
+      "ZipCode": "24751",
+      "Town": "Miltenberg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2023-10-01",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000025",
+      "CompanyName": "Rose",
+      "StreetAddress": "Claus-Dieter-Renner-Platz",
+      "HouseNo": "119",
+      "ZipCode": "25135",
+      "Town": "Ebermannstadt",
+      "CountryCode": "AT",
+      "LastOrderDate": "2023-06-20",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000026",
+      "CompanyName": "Ring Tlustek GmbH",
+      "StreetAddress": "Gloria-R\u00f6hrdanz-Ring",
+      "HouseNo": "177",
+      "ZipCode": "24118",
+      "Town": "Guben",
+      "CountryCode": "CH",
+      "LastOrderDate": "2024-01-12",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000027",
+      "CompanyName": "Schleich H\u00e4ring Stiftung & Co. KG",
+      "StreetAddress": "Haaseweg",
+      "HouseNo": "84",
+      "ZipCode": "87401",
+      "Town": "G\u00f6ppingen",
+      "CountryCode": "DE",
+      "LastOrderDate": "2023-12-04",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000028",
+      "CompanyName": "Adler GmbH",
+      "StreetAddress": "Fadime-Hesse-Platz",
+      "HouseNo": "81",
+      "ZipCode": "86801",
+      "Town": "T\u00fcbingen",
+      "CountryCode": "AT",
+      "LastOrderDate": "2023-06-29",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000029",
+      "CompanyName": "Ritter AG",
+      "StreetAddress": "S\u00e4uberlichstr.",
+      "HouseNo": "55",
+      "ZipCode": "62045",
+      "Town": "Kaiserslautern",
+      "CountryCode": "CH",
+      "LastOrderDate": "2022-12-19",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000030",
+      "CompanyName": "Stoll GbR",
+      "StreetAddress": "Nikolaus-Zahn-Weg",
+      "HouseNo": "168",
+      "ZipCode": "92322",
+      "Town": "Aue",
+      "CountryCode": "AT",
+      "LastOrderDate": "2022-01-21",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000031",
+      "CompanyName": "Walter GmbH",
+      "StreetAddress": "Staudeallee",
+      "HouseNo": "118",
+      "ZipCode": "42160",
+      "Town": "Gadebusch",
+      "CountryCode": "DE",
+      "LastOrderDate": "2023-07-11",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000032",
+      "CompanyName": "Mies GmbH",
+      "StreetAddress": "Heidrichplatz",
+      "HouseNo": "64",
+      "ZipCode": "36541",
+      "Town": "Jena",
+      "CountryCode": "CH",
+      "LastOrderDate": "2020-03-13",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000033",
+      "CompanyName": "Pechel",
+      "StreetAddress": "Stiebitzallee",
+      "HouseNo": "68",
+      "ZipCode": "01429",
+      "Town": "Bad Kissingen",
+      "CountryCode": "CH",
+      "LastOrderDate": "2019-12-09",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000034",
+      "CompanyName": "Schenk GmbH & Co. KG",
+      "StreetAddress": "Vollbrechtallee",
+      "HouseNo": "150",
+      "ZipCode": "69816",
+      "Town": "Greiz",
+      "CountryCode": "AT",
+      "LastOrderDate": "2022-06-08",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000035",
+      "CompanyName": "Trommler GmbH & Co. KG",
+      "StreetAddress": "Annamaria-Renner-Allee",
+      "HouseNo": "36",
+      "ZipCode": "56159",
+      "Town": "Sternberg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2020-12-16",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000036",
+      "CompanyName": "Tschentscher GmbH",
+      "StreetAddress": "Stahrstra\u00dfe",
+      "HouseNo": "194",
+      "ZipCode": "64823",
+      "Town": "Stollberg",
+      "CountryCode": "DE",
+      "LastOrderDate": "2025-04-06",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000037",
+      "CompanyName": "Stey Wei\u00df AG & Co. KGaA",
+      "StreetAddress": "Lachmannstr.",
+      "HouseNo": "161",
+      "ZipCode": "44369",
+      "Town": "M\u00fchldorf am Inn",
+      "CountryCode": "DE",
+      "LastOrderDate": "2018-11-11",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000038",
+      "CompanyName": "Margraf Steuer AG & Co. OHG",
+      "StreetAddress": "W\u00e4hnerplatz",
+      "HouseNo": "153",
+      "ZipCode": "48951",
+      "Town": "Suhl",
+      "CountryCode": "DE",
+      "LastOrderDate": "2022-03-06",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000039",
+      "CompanyName": "Hecker Gumprich AG & Co. KG",
+      "StreetAddress": "Bastian-Henschel-Stra\u00dfe",
+      "HouseNo": "153",
+      "ZipCode": "76936",
+      "Town": "Lippstadt",
+      "CountryCode": "AT",
+      "LastOrderDate": "2020-07-23",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000040",
+      "CompanyName": "Finke KGaA",
+      "StreetAddress": "Rosalinde-Weitzel-Gasse",
+      "HouseNo": "142",
+      "ZipCode": "32870",
+      "Town": "Cottbus",
+      "CountryCode": "DE",
+      "LastOrderDate": "2018-11-12",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000041",
+      "CompanyName": "Eimer Mitschke OHG mbH",
+      "StreetAddress": "Wendestra\u00dfe",
+      "HouseNo": "30",
+      "ZipCode": "87277",
+      "Town": "Wolmirstedt",
+      "CountryCode": "CH",
+      "LastOrderDate": "2020-06-21",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000042",
+      "CompanyName": "Schweitzer GbR",
+      "StreetAddress": "Schomberplatz",
+      "HouseNo": "197",
+      "ZipCode": "71434",
+      "Town": "Herzberg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2022-09-05",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000043",
+      "CompanyName": "Butte",
+      "StreetAddress": "Gerard-Heinrich-Stra\u00dfe",
+      "HouseNo": "76",
+      "ZipCode": "31665",
+      "Town": "L\u00fcbeck",
+      "CountryCode": "AT",
+      "LastOrderDate": "2024-09-20",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000044",
+      "CompanyName": "Haering GmbH & Co. KG",
+      "StreetAddress": "Winklerstr.",
+      "HouseNo": "1",
+      "ZipCode": "96705",
+      "Town": "Worbis",
+      "CountryCode": "CH",
+      "LastOrderDate": "2023-07-17",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000045",
+      "CompanyName": "Lindner Renner Stiftung & Co. KGaA",
+      "StreetAddress": "Zoran-Hartmann-Ring",
+      "HouseNo": "196",
+      "ZipCode": "70656",
+      "Town": "M\u00fchlhausen",
+      "CountryCode": "DE",
+      "LastOrderDate": "2020-10-19",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000046",
+      "CompanyName": "Scholtz KG",
+      "StreetAddress": "Senta-Kreusel-Weg",
+      "HouseNo": "161",
+      "ZipCode": "16272",
+      "Town": "Griesbach Rottal",
+      "CountryCode": "AT",
+      "LastOrderDate": "2019-04-30",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000047",
+      "CompanyName": "Junken Hahn GmbH & Co. KG",
+      "StreetAddress": "Kallertallee",
+      "HouseNo": "156",
+      "ZipCode": "46417",
+      "Town": "Wolgast",
+      "CountryCode": "DE",
+      "LastOrderDate": "2024-10-11",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000048",
+      "CompanyName": "Birnbaum",
+      "StreetAddress": "Haufferweg",
+      "HouseNo": "196",
+      "ZipCode": "00330",
+      "Town": "Gerolzhofen",
+      "CountryCode": "DE",
+      "LastOrderDate": "2020-06-11",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000049",
+      "CompanyName": "M\u00fchle OHG mbH",
+      "StreetAddress": "Carmela-Harloff-Stra\u00dfe",
+      "HouseNo": "1",
+      "ZipCode": "52991",
+      "Town": "Heinsberg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2022-11-10",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000050",
+      "CompanyName": "Sager AG",
+      "StreetAddress": "Ruppertweg",
+      "HouseNo": "5",
+      "ZipCode": "63193",
+      "Town": "Uffenheim",
+      "CountryCode": "DE",
+      "LastOrderDate": "2022-06-04",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000051",
+      "CompanyName": "Stolze Schinke e.V.",
+      "StreetAddress": "Louise-Rosemann-Gasse",
+      "HouseNo": "62",
+      "ZipCode": "86518",
+      "Town": "Anklam",
+      "CountryCode": "DE",
+      "LastOrderDate": "2023-10-17",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000052",
+      "CompanyName": "Niemeier D\u00f6ring GmbH & Co. KG",
+      "StreetAddress": "Schusterallee",
+      "HouseNo": "21",
+      "ZipCode": "26284",
+      "Town": "M\u00fchldorf am Inn",
+      "CountryCode": "DE",
+      "LastOrderDate": "2021-01-16",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000053",
+      "CompanyName": "Wagenknecht Scheel GbR",
+      "StreetAddress": "Henschelallee",
+      "HouseNo": "195",
+      "ZipCode": "47379",
+      "Town": "Husum",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-01-30",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000054",
+      "CompanyName": "Oderwald GmbH",
+      "StreetAddress": "Zoltan-Hahn-Ring",
+      "HouseNo": "169",
+      "ZipCode": "54948",
+      "Town": "Osterode am Harz",
+      "CountryCode": "AT",
+      "LastOrderDate": "2020-04-30",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000055",
+      "CompanyName": "Caspar GbR",
+      "StreetAddress": "Niemeierstr.",
+      "HouseNo": "68",
+      "ZipCode": "77701",
+      "Town": "Gadebusch",
+      "CountryCode": "CH",
+      "LastOrderDate": "2019-09-10",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000056",
+      "CompanyName": "S\u00fc\u00dfebier Henk GmbH",
+      "StreetAddress": "M\u00fchlestr.",
+      "HouseNo": "55",
+      "ZipCode": "68557",
+      "Town": "Havelberg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2018-10-04",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000057",
+      "CompanyName": "Heinrich Dussen van Stiftung & Co. KGaA",
+      "StreetAddress": "Mahmut-Dussen van-Allee",
+      "HouseNo": "183",
+      "ZipCode": "33749",
+      "Town": "Burgdorf",
+      "CountryCode": "AT",
+      "LastOrderDate": "2022-01-07",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000058",
+      "CompanyName": "H\u00fcbel GbR",
+      "StreetAddress": "Gie\u00dfring",
+      "HouseNo": "167",
+      "ZipCode": "82400",
+      "Town": "Vechta",
+      "CountryCode": "AT",
+      "LastOrderDate": "2021-07-31",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000059",
+      "CompanyName": "Schweitzer e.G.",
+      "StreetAddress": "Dobesallee",
+      "HouseNo": "116",
+      "ZipCode": "94777",
+      "Town": "Erbisdorf",
+      "CountryCode": "DE",
+      "LastOrderDate": "2023-09-18",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000060",
+      "CompanyName": "Herrmann GmbH & Co. KGaA",
+      "StreetAddress": "Marie-Bolzmann-Stra\u00dfe",
+      "HouseNo": "17",
+      "ZipCode": "19022",
+      "Town": "Borna",
+      "CountryCode": "AT",
+      "LastOrderDate": "2026-04-04",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000061",
+      "CompanyName": "Drubin KG",
+      "StreetAddress": "auch Schlauchinstr.",
+      "HouseNo": "142",
+      "ZipCode": "86774",
+      "Town": "Havelberg",
+      "CountryCode": "DE",
+      "LastOrderDate": "2019-11-23",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000062",
+      "CompanyName": "Scholl",
+      "StreetAddress": "Ekaterina-Warmer-Gasse",
+      "HouseNo": "2",
+      "ZipCode": "34123",
+      "Town": "Querfurt",
+      "CountryCode": "DE",
+      "LastOrderDate": "2018-07-22",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000063",
+      "CompanyName": "Franke AG",
+      "StreetAddress": "Mendeweg",
+      "HouseNo": "16",
+      "ZipCode": "40344",
+      "Town": "Bernburg",
+      "CountryCode": "DE",
+      "LastOrderDate": "2025-09-26",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000064",
+      "CompanyName": "Heintze",
+      "StreetAddress": "Zirmeallee",
+      "HouseNo": "85",
+      "ZipCode": "61832",
+      "Town": "Diepholz",
+      "CountryCode": "DE",
+      "LastOrderDate": "2020-09-23",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000065",
+      "CompanyName": "Bonbach AG & Co. KGaA",
+      "StreetAddress": "Scheibeweg",
+      "HouseNo": "72",
+      "ZipCode": "71746",
+      "Town": "N\u00f6rdlingen",
+      "CountryCode": "CH",
+      "LastOrderDate": "2021-01-18",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000066",
+      "CompanyName": "Nohlmans",
+      "StreetAddress": "Buttestr.",
+      "HouseNo": "139",
+      "ZipCode": "65940",
+      "Town": "Geldern",
+      "CountryCode": "DE",
+      "LastOrderDate": "2020-02-03",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000067",
+      "CompanyName": "Ruppert",
+      "StreetAddress": "Kornelia-Steinberg-Ring",
+      "HouseNo": "122",
+      "ZipCode": "27874",
+      "Town": "Rothenburg ob der Tauber",
+      "CountryCode": "DE",
+      "LastOrderDate": "2021-03-10",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000068",
+      "CompanyName": "Schuster Noack AG",
+      "StreetAddress": "Keudelstra\u00dfe",
+      "HouseNo": "49",
+      "ZipCode": "51256",
+      "Town": "Hagenow",
+      "CountryCode": "DE",
+      "LastOrderDate": "2025-05-28",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000069",
+      "CompanyName": "K\u00fchnert",
+      "StreetAddress": "Uli-Cichorius-Ring",
+      "HouseNo": "111",
+      "ZipCode": "51680",
+      "Town": "L\u00fcbben",
+      "CountryCode": "AT",
+      "LastOrderDate": "2021-09-29",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000070",
+      "CompanyName": "Graf GmbH & Co. OHG",
+      "StreetAddress": "Scholtzallee",
+      "HouseNo": "120",
+      "ZipCode": "70348",
+      "Town": "Hagenow",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-11-20",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000071",
+      "CompanyName": "Thanel Neureuther AG",
+      "StreetAddress": "Yasemin-Schuchhardt-Weg",
+      "HouseNo": "168",
+      "ZipCode": "24808",
+      "Town": "Bremerv\u00f6rde",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-05-22",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000072",
+      "CompanyName": "Drewes GmbH & Co. KG",
+      "StreetAddress": "Friedericke-Fliegner-Stra\u00dfe",
+      "HouseNo": "104",
+      "ZipCode": "84677",
+      "Town": "Miesbach",
+      "CountryCode": "CH",
+      "LastOrderDate": "2022-09-09",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000073",
+      "CompanyName": "Fiebig",
+      "StreetAddress": "Grein Grothstr.",
+      "HouseNo": "64",
+      "ZipCode": "14658",
+      "Town": "Ahaus",
+      "CountryCode": "DE",
+      "LastOrderDate": "2024-05-11",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000074",
+      "CompanyName": "van der Dussen Huhn KG",
+      "StreetAddress": "Fischerstra\u00dfe",
+      "HouseNo": "115",
+      "ZipCode": "55886",
+      "Town": "Hettstedt",
+      "CountryCode": "DE",
+      "LastOrderDate": "2021-10-05",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000075",
+      "CompanyName": "Thanel GbR",
+      "StreetAddress": "Heintzeallee",
+      "HouseNo": "72",
+      "ZipCode": "05766",
+      "Town": "Norden",
+      "CountryCode": "AT",
+      "LastOrderDate": "2023-09-10",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000076",
+      "CompanyName": "Eberth GmbH & Co. OHG",
+      "StreetAddress": "Ditschlerinallee",
+      "HouseNo": "114",
+      "ZipCode": "18702",
+      "Town": "Starnberg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-05-24",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000077",
+      "CompanyName": "Bruder GmbH & Co. KGaA",
+      "StreetAddress": "Kambsstr.",
+      "HouseNo": "167",
+      "ZipCode": "15865",
+      "Town": "Potsdam",
+      "CountryCode": "CH",
+      "LastOrderDate": "2026-04-30",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000078",
+      "CompanyName": "Sch\u00f6nland AG",
+      "StreetAddress": "Eva-Stolze-Ring",
+      "HouseNo": "193",
+      "ZipCode": "16117",
+      "Town": "Uelzen",
+      "CountryCode": "DE",
+      "LastOrderDate": "2024-08-17",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000079",
+      "CompanyName": "Baum Bien GmbH",
+      "StreetAddress": "Klaus-Michael-Klemt-Ring",
+      "HouseNo": "125",
+      "ZipCode": "23869",
+      "Town": "Eilenburg",
+      "CountryCode": "AT",
+      "LastOrderDate": "2024-02-05",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000080",
+      "CompanyName": "Budig KG",
+      "StreetAddress": "Schollweg",
+      "HouseNo": "16",
+      "ZipCode": "79237",
+      "Town": "Mittweida",
+      "CountryCode": "DE",
+      "LastOrderDate": "2022-03-30",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000081",
+      "CompanyName": "Stahr Anders e.V.",
+      "StreetAddress": "H\u00f6velweg",
+      "HouseNo": "100",
+      "ZipCode": "17594",
+      "Town": "T\u00fcbingen",
+      "CountryCode": "AT",
+      "LastOrderDate": "2021-05-23",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000082",
+      "CompanyName": "Meyer Jacobi J\u00e4ckel AG & Co. OHG",
+      "StreetAddress": "Nettegasse",
+      "HouseNo": "109",
+      "ZipCode": "69594",
+      "Town": "Aschaffenburg",
+      "CountryCode": "CH",
+      "LastOrderDate": "2020-04-05",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000083",
+      "CompanyName": "Kroker",
+      "StreetAddress": "Andersstr.",
+      "HouseNo": "184",
+      "ZipCode": "97439",
+      "Town": "F\u00fcssen",
+      "CountryCode": "AT",
+      "LastOrderDate": "2024-10-03",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000084",
+      "CompanyName": "Grein Groth",
+      "StreetAddress": "Stiebitzallee",
+      "HouseNo": "76",
+      "ZipCode": "10470",
+      "Town": "Wiedenbr\u00fcck",
+      "CountryCode": "DE",
+      "LastOrderDate": "2025-11-02",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000085",
+      "CompanyName": "Conradi GmbH",
+      "StreetAddress": "Weinholdstra\u00dfe",
+      "HouseNo": "189",
+      "ZipCode": "32858",
+      "Town": "Eckernf\u00f6rde",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-10-23",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000086",
+      "CompanyName": "Nerger H\u00fcbel Stiftung & Co. KGaA",
+      "StreetAddress": "Drewesstra\u00dfe",
+      "HouseNo": "81",
+      "ZipCode": "23685",
+      "Town": "Lemgo",
+      "CountryCode": "DE",
+      "LastOrderDate": "2025-12-06",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000087",
+      "CompanyName": "Hettner KG",
+      "StreetAddress": "Uli-Koch-Allee",
+      "HouseNo": "123",
+      "ZipCode": "96513",
+      "Town": "Aue",
+      "CountryCode": "CH",
+      "LastOrderDate": "2020-07-15",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000088",
+      "CompanyName": "R\u00f6rricht",
+      "StreetAddress": "Schmidtplatz",
+      "HouseNo": "15",
+      "ZipCode": "74612",
+      "Town": "Bad Kissingen",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-08-05",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000089",
+      "CompanyName": "Nohlmans Drub AG",
+      "StreetAddress": "Reni-Renner-Platz",
+      "HouseNo": "18",
+      "ZipCode": "75869",
+      "Town": "L\u00fcbeck",
+      "CountryCode": "CH",
+      "LastOrderDate": "2025-09-24",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000090",
+      "CompanyName": "Dippel",
+      "StreetAddress": "Schmiedtstra\u00dfe",
+      "HouseNo": "61",
+      "ZipCode": "05377",
+      "Town": "Karlsruhe",
+      "CountryCode": "AT",
+      "LastOrderDate": "2025-02-23",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000091",
+      "CompanyName": "Striebitz GmbH",
+      "StreetAddress": "Bolanderstra\u00dfe",
+      "HouseNo": "64",
+      "ZipCode": "31713",
+      "Town": "Badibling",
+      "CountryCode": "CH",
+      "LastOrderDate": "2019-10-29",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000092",
+      "CompanyName": "Henk Eberth e.V.",
+      "StreetAddress": "Charles-Wieloch-Weg",
+      "HouseNo": "159",
+      "ZipCode": "93352",
+      "Town": "G\u00f6ppingen",
+      "CountryCode": "DE",
+      "LastOrderDate": "2021-10-16",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000093",
+      "CompanyName": "Ehlert KG",
+      "StreetAddress": "Gertzgasse",
+      "HouseNo": "150",
+      "ZipCode": "20539",
+      "Town": "Apolda",
+      "CountryCode": "CH",
+      "LastOrderDate": "2020-08-18",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000094",
+      "CompanyName": "Hettner AG",
+      "StreetAddress": "Jolanthe-Linke-Weg",
+      "HouseNo": "67",
+      "ZipCode": "17758",
+      "Town": "Merseburg",
+      "CountryCode": "DE",
+      "LastOrderDate": "2018-12-25",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000095",
+      "CompanyName": "Hartung",
+      "StreetAddress": "Iwona-Ziegert-Allee",
+      "HouseNo": "81",
+      "ZipCode": "70076",
+      "Town": "Torgau",
+      "CountryCode": "DE",
+      "LastOrderDate": "2023-07-08",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000096",
+      "CompanyName": "Noack Stiftung & Co. KG",
+      "StreetAddress": "Briemergasse",
+      "HouseNo": "34",
+      "ZipCode": "92124",
+      "Town": "Kronach",
+      "CountryCode": "CH",
+      "LastOrderDate": "2019-04-04",
+      "CustomerType": "Prospect"
+    },
+    {
+      "CustNo": "CUST000097",
+      "CompanyName": "Radisch",
+      "StreetAddress": "Metzstr.",
+      "HouseNo": "118",
+      "ZipCode": "11836",
+      "Town": "Geithain",
+      "CountryCode": "AT",
+      "LastOrderDate": "2025-09-05",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000098",
+      "CompanyName": "Kambs Metz GmbH",
+      "StreetAddress": "Vollbrechtgasse",
+      "HouseNo": "118",
+      "ZipCode": "65452",
+      "Town": "Bergzabern",
+      "CountryCode": "CH",
+      "LastOrderDate": "2020-03-06",
+      "CustomerType": "Customer"
+    },
+    {
+      "CustNo": "CUST000099",
+      "CompanyName": "Caspar AG",
+      "StreetAddress": "Dietzweg",
+      "HouseNo": "19",
+      "ZipCode": "28098",
+      "Town": "Stuttgart",
+      "CountryCode": "CH",
+      "LastOrderDate": "2024-02-07",
+      "CustomerType": "FormerCustomer"
+    },
+    {
+      "CustNo": "CUST000100",
+      "CompanyName": "Langern GmbH",
+      "StreetAddress": "Ullmanngasse",
+      "HouseNo": "68",
+      "ZipCode": "94519",
+      "Town": "D\u00fcren",
+      "CountryCode": "DE",
+      "LastOrderDate": "2022-07-31",
+      "CustomerType": "Customer"
+    }
+  ],
+  "dataset_path_clean": "data/generated/customer_master_clean.csv",
+  "dataset_path_dirty": "data/generated/customer_master_dirty.csv",
+  "noise_applied": false,
+  "ground_truth_path": "data/generated/customer_master_ground_truth.json",
+  "seed": 42,
+  "logs": []
+}

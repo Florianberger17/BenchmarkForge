@@ -1,101 +1,101 @@
 CustomerID,Name,Street,City,PostalCode,Country,LastBusinessActivityDate,Status
-CUST000001,Dowerg,Jolanta-Höfig-Platz 164,Backnang,21819,DEU,2026-03-14,active
-CUST000002,Davids AG & Co. OHG,Alwine-Schleich-Gasse 71,Altötting,86379,DEU,2023-12-23,active
-CUST000003,Thanel GmbH & Co. KG,Holstenplatz 189,Ilmenau,51161,DEU,2018-11-22,inactive
-CUST000004,Hettner,Janet-Mies-Weg 140,Roding,61849,DEU,2019-11-10,inactive
-CUST000005,Tlustek AG,Gesche-Heidrich-Ring 9,Eberswalde,31647,DEU,2025-06-06,active
-CUST000006,Klapp Häring OHG mbH,Tintzmannweg 60,Konstanz,92832,CHE,2019-09-24,inactive
-CUST000007,Schwital Stroh KG,Hedy-Junk-Gasse 144,Reutlingen,5641,DEU,2019-03-12,inactive
-CUST000008,Jopich,Gerdi-Ortmann-Straße 140,Wolfratshausen,24238,AUT,2024-01-04,active
-CUST000009,Lorch,Klotzplatz 151,Sebnitz,87101,AUT,2026-05-29,active
-CUST000010,Zorbach OHG mbH,Schenkgasse 179,Tecklenburg,69784,AUT,2022-08-31,inactive
-CUST000011,Drewes,Wilmsenweg 40,Werdau,14627,DEU,2022-09-15,inactive
-CUST000012,Hesse,Ana-Döring-Allee 24,Plauen,89325,AUT,2025-05-24,active
-CUST000013,Ackermann,Niemeiergasse 89,Borna,54303,CHE,2023-07-07,active
-CUST000014,Neureuther,Zofia-Wesack-Weg 187,Freudenstadt,27824,AUT,2020-06-19,inactive
-CUST000015,Wende,Ingried-Jockel-Straße 97,Belzig,78713,DEU,2020-04-15,inactive
-CUST000016,Bärer Schacht KG,Dajana-Hartmann-Gasse 161,Osterburg,3105,CHE,2022-06-04,inactive
-CUST000017,Holsten OHG mbH,Hamannstr. 50,Erkelenz,99737,CHE,2025-09-13,active
-CUST000018,Dietz OHG mbH,Klappstraße 170,Bützow,70106,DEU,2023-03-27,inactive
-CUST000019,Gröttner AG & Co. OHG,Etzoldstraße 60,Badibling,47317,DEU,2022-03-21,inactive
-CUST000020,Reuter,Wenke-Davids-Platz 117,Eckernförde,67736,CHE,2022-05-22,inactive
-CUST000021,Adler Krebs GbR,Hörlestraße 95,Wolfratshausen,23430,AUT,2024-02-17,active
-CUST000022,Bohlander Binner KG,Paffrathallee 69,Sulzbach-Rosenberg,8121,CHE,2018-10-25,inactive
-CUST000023,Kusch AG,Clara-Scheibe-Gasse 19,Forchheim,69985,CHE,2019-05-12,inactive
-CUST000024,Trubin,Henckring 137,Miltenberg,24751,CHE,2023-09-26,active
-CUST000025,Rose,Claus-Dieter-Renner-Platz 119,Ebermannstadt,25135,AUT,2023-06-15,inactive
-CUST000026,Ring Tlustek GmbH,Gloria-Röhrdanz-Ring 177,Guben,24118,CHE,2024-01-07,active
-CUST000027,Schleich Häring Stiftung & Co. KG,Haaseweg 84,Göppingen,87401,DEU,2023-11-29,active
-CUST000028,Adler GmbH,Fadime-Hesse-Platz 81,Tübingen,86801,AUT,2023-06-24,inactive
-CUST000029,Ritter AG,Säuberlichstr. 55,Kaiserslautern,62045,CHE,2022-12-14,inactive
-CUST000030,Stoll GbR,Nikolaus-Zahn-Weg 168,Aue,92322,AUT,2022-01-16,inactive
-CUST000031,Walter GmbH,Staudeallee 118,Gadebusch,42160,DEU,2023-07-06,active
-CUST000032,Mies GmbH,Heidrichplatz 64,Jena,36541,CHE,2020-03-08,inactive
-CUST000033,Pechel,Stiebitzallee 68,Bad Kissingen,1429,CHE,2019-12-04,inactive
-CUST000034,Schenk GmbH & Co. KG,Vollbrechtallee 150,Greiz,69816,AUT,2022-06-03,inactive
-CUST000035,Trommler GmbH & Co. KG,Annamaria-Renner-Allee 36,Sternberg,56159,CHE,2020-12-11,inactive
-CUST000036,Tschentscher GmbH,Stahrstraße 194,Stollberg,64823,DEU,2025-04-01,active
-CUST000037,Stey Weiß AG & Co. KGaA,Lachmannstr. 161,Mühldorf am Inn,44369,DEU,2018-11-06,inactive
-CUST000038,Margraf Steuer AG & Co. OHG,Wähnerplatz 153,Suhl,48951,DEU,2022-03-01,inactive
-CUST000039,Hecker Gumprich AG & Co. KG,Bastian-Henschel-Straße 153,Lippstadt,76936,AUT,2020-07-18,inactive
-CUST000040,Finke KGaA,Rosalinde-Weitzel-Gasse 142,Cottbus,32870,DEU,2018-11-07,inactive
-CUST000041,Eimer Mitschke OHG mbH,Wendestraße 30,Wolmirstedt,87277,CHE,2020-06-16,inactive
-CUST000042,Schweitzer GbR,Schomberplatz 197,Herzberg,71434,CHE,2022-08-31,inactive
-CUST000043,Butte,Gerard-Heinrich-Straße 76,Lübeck,31665,AUT,2024-09-15,active
-CUST000044,Haering GmbH & Co. KG,Winklerstr. 1,Worbis,96705,CHE,2023-07-12,active
-CUST000045,Lindner Renner Stiftung & Co. KGaA,Zoran-Hartmann-Ring 196,Mühlhausen,70656,DEU,2020-10-14,inactive
-CUST000046,Scholtz KG,Senta-Kreusel-Weg 161,Griesbach Rottal,16272,AUT,2019-04-25,inactive
-CUST000047,Junken Hahn GmbH & Co. KG,Kallertallee 156,Wolgast,46417,DEU,2024-10-06,active
-CUST000048,Birnbaum,Haufferweg 196,Gerolzhofen,330,DEU,2020-06-06,inactive
-CUST000049,Mühle OHG mbH,Carmela-Harloff-Straße 1,Heinsberg,52991,CHE,2022-11-05,inactive
-CUST000050,Sager AG,Ruppertweg 5,Uffenheim,63193,DEU,2022-05-30,inactive
-CUST000051,Stolze Schinke e.V.,Louise-Rosemann-Gasse 62,Anklam,86518,DEU,2023-10-12,active
-CUST000052,Niemeier Döring GmbH & Co. KG,Schusterallee 21,Mühldorf am Inn,26284,DEU,2021-01-11,inactive
-CUST000053,Wagenknecht Scheel GbR,Henschelallee 195,Husum,47379,CHE,2025-01-25,active
-CUST000054,Oderwald GmbH,Zoltan-Hahn-Ring 169,Osterode am Harz,54948,AUT,2020-04-25,inactive
-CUST000055,Caspar GbR,Niemeierstr. 68,Gadebusch,77701,CHE,2019-09-05,inactive
-CUST000056,Süßebier Henk GmbH,Mühlestr. 55,Havelberg,68557,CHE,2018-09-29,inactive
-CUST000057,Heinrich Dussen van Stiftung & Co. KGaA,Mahmut-Dussen van-Allee 183,Burgdorf,33749,AUT,2022-01-02,inactive
-CUST000058,Hübel GbR,Gießring 167,Vechta,82400,AUT,2021-07-26,inactive
-CUST000059,Schweitzer e.G.,Dobesallee 116,Erbisdorf,94777,DEU,2023-09-13,active
-CUST000060,Herrmann GmbH & Co. KGaA,Marie-Bolzmann-Straße 17,Borna,19022,AUT,2026-03-30,active
-CUST000061,Drubin KG,auch Schlauchinstr. 142,Havelberg,86774,DEU,2019-11-18,inactive
-CUST000062,Scholl,Ekaterina-Warmer-Gasse 2,Querfurt,34123,DEU,2018-07-17,inactive
-CUST000063,Franke AG,Mendeweg 16,Bernburg,40344,DEU,2025-09-21,active
-CUST000064,Heintze,Zirmeallee 85,Diepholz,61832,DEU,2020-09-18,inactive
-CUST000065,Bonbach AG & Co. KGaA,Scheibeweg 72,Nördlingen,71746,CHE,2021-01-13,inactive
-CUST000066,Nohlmans,Buttestr. 139,Geldern,65940,DEU,2020-01-29,inactive
-CUST000067,Ruppert,Kornelia-Steinberg-Ring 122,Rothenburg ob der Tauber,27874,DEU,2021-03-05,inactive
-CUST000068,Schuster Noack AG,Keudelstraße 49,Hagenow,51256,DEU,2025-05-23,active
-CUST000069,Kühnert,Uli-Cichorius-Ring 111,Lübben,51680,AUT,2021-09-24,inactive
-CUST000070,Graf GmbH & Co. OHG,Scholtzallee 120,Hagenow,70348,CHE,2025-11-15,active
-CUST000071,Thanel Neureuther AG,Yasemin-Schuchhardt-Weg 168,Bremervörde,24808,CHE,2025-05-17,active
-CUST000072,Drewes GmbH & Co. KG,Friedericke-Fliegner-Straße 104,Miesbach,84677,CHE,2022-09-04,inactive
-CUST000073,Fiebig,Grein Grothstr. 64,Ahaus,14658,DEU,2024-05-06,active
-CUST000074,van der Dussen Huhn KG,Fischerstraße 115,Hettstedt,55886,DEU,2021-09-30,inactive
-CUST000075,Thanel GbR,Heintzeallee 72,Norden,5766,AUT,2023-09-05,active
-CUST000076,Eberth GmbH & Co. OHG,Ditschlerinallee 114,Starnberg,18702,CHE,2025-05-19,active
-CUST000077,Bruder GmbH & Co. KGaA,Kambsstr. 167,Potsdam,15865,CHE,2026-04-25,active
-CUST000078,Schönland AG,Eva-Stolze-Ring 193,Uelzen,16117,DEU,2024-08-12,active
-CUST000079,Baum Bien GmbH,Klaus-Michael-Klemt-Ring 125,Eilenburg,23869,AUT,2024-01-31,active
-CUST000080,Budig KG,Schollweg 16,Mittweida,79237,DEU,2022-03-25,inactive
-CUST000081,Stahr Anders e.V.,Hövelweg 100,Tübingen,17594,AUT,2021-05-18,inactive
-CUST000082,Meyer Jacobi Jäckel AG & Co. OHG,Nettegasse 109,Aschaffenburg,69594,CHE,2020-03-31,inactive
-CUST000083,Kroker,Andersstr. 184,Füssen,97439,AUT,2024-09-28,active
-CUST000084,Grein Groth,Stiebitzallee 76,Wiedenbrück,10470,DEU,2025-10-28,active
-CUST000085,Conradi GmbH,Weinholdstraße 189,Eckernförde,32858,CHE,2025-10-18,active
-CUST000086,Nerger Hübel Stiftung & Co. KGaA,Drewesstraße 81,Lemgo,23685,DEU,2025-12-01,active
-CUST000087,Hettner KG,Uli-Koch-Allee 123,Aue,96513,CHE,2020-07-10,inactive
-CUST000088,Rörricht,Schmidtplatz 15,Bad Kissingen,74612,CHE,2025-07-31,active
-CUST000089,Nohlmans Drub AG,Reni-Renner-Platz 18,Lübeck,75869,CHE,2025-09-19,active
-CUST000090,Dippel,Schmiedtstraße 61,Karlsruhe,5377,AUT,2025-02-18,active
-CUST000091,Striebitz GmbH,Bolanderstraße 64,Badibling,31713,CHE,2019-10-24,inactive
-CUST000092,Henk Eberth e.V.,Charles-Wieloch-Weg 159,Göppingen,93352,DEU,2021-10-11,inactive
-CUST000093,Ehlert KG,Gertzgasse 150,Apolda,20539,CHE,2020-08-13,inactive
-CUST000094,Hettner AG,Jolanthe-Linke-Weg 67,Merseburg,17758,DEU,2018-12-20,inactive
-CUST000095,Hartung,Iwona-Ziegert-Allee 81,Torgau,70076,DEU,2023-07-03,active
-CUST000096,Noack Stiftung & Co. KG,Briemergasse 34,Kronach,92124,CHE,2019-03-30,inactive
-CUST000097,Radisch,Metzstr. 118,Geithain,11836,AUT,2025-08-31,active
-CUST000098,Kambs Metz GmbH,Vollbrechtgasse 118,Bergzabern,65452,CHE,2020-03-01,inactive
-CUST000099,Caspar AG,Dietzweg 19,Stuttgart,28098,CHE,2024-02-02,active
-CUST000100,Langern GmbH,Ullmanngasse 68,Düren,94519,DEU,2022-07-26,inactive
+CUST000001,Dowerg,Jolanta-Höfig-Platz 164,Backnang,21819,DEU,2026-03-19,active
+CUST000002,Davids AG & Co. OHG,Alwine-Schleich-Gasse 71,Altötting,86379,DEU,2023-12-28,active
+CUST000003,Thanel GmbH & Co. KG,Holstenplatz 189,Ilmenau,51161,DEU,2018-11-27,inactive
+CUST000004,Hettner,Janet-Mies-Weg 140,Roding,61849,DEU,2019-11-15,inactive
+CUST000005,Tlustek AG,Gesche-Heidrich-Ring 9,Eberswalde,31647,DEU,2025-06-11,active
+CUST000006,Klapp Häring OHG mbH,Tintzmannweg 60,Konstanz,92832,CHE,2019-09-29,inactive
+CUST000007,Schwital Stroh KG,Hedy-Junk-Gasse 144,Reutlingen,5641,DEU,2019-03-17,inactive
+CUST000008,Jopich,Gerdi-Ortmann-Straße 140,Wolfratshausen,24238,AUT,2024-01-09,active
+CUST000009,Lorch,Klotzplatz 151,Sebnitz,87101,AUT,2026-06-03,active
+CUST000010,Zorbach OHG mbH,Schenkgasse 179,Tecklenburg,69784,AUT,2022-09-05,inactive
+CUST000011,Drewes,Wilmsenweg 40,Werdau,14627,DEU,2022-09-20,inactive
+CUST000012,Hesse,Ana-Döring-Allee 24,Plauen,89325,AUT,2025-05-29,active
+CUST000013,Ackermann,Niemeiergasse 89,Borna,54303,CHE,2023-07-12,active
+CUST000014,Neureuther,Zofia-Wesack-Weg 187,Freudenstadt,27824,AUT,2020-06-24,inactive
+CUST000015,Wende,Ingried-Jockel-Straße 97,Belzig,78713,DEU,2020-04-20,inactive
+CUST000016,Bärer Schacht KG,Dajana-Hartmann-Gasse 161,Osterburg,3105,CHE,2022-06-09,inactive
+CUST000017,Holsten OHG mbH,Hamannstr. 50,Erkelenz,99737,CHE,2025-09-18,active
+CUST000018,Dietz OHG mbH,Klappstraße 170,Bützow,70106,DEU,2023-04-01,inactive
+CUST000019,Gröttner AG & Co. OHG,Etzoldstraße 60,Badibling,47317,DEU,2022-03-26,inactive
+CUST000020,Reuter,Wenke-Davids-Platz 117,Eckernförde,67736,CHE,2022-05-27,inactive
+CUST000021,Adler Krebs GbR,Hörlestraße 95,Wolfratshausen,23430,AUT,2024-02-22,active
+CUST000022,Bohlander Binner KG,Paffrathallee 69,Sulzbach-Rosenberg,8121,CHE,2018-10-30,inactive
+CUST000023,Kusch AG,Clara-Scheibe-Gasse 19,Forchheim,69985,CHE,2019-05-17,inactive
+CUST000024,Trubin,Henckring 137,Miltenberg,24751,CHE,2023-10-01,active
+CUST000025,Rose,Claus-Dieter-Renner-Platz 119,Ebermannstadt,25135,AUT,2023-06-20,inactive
+CUST000026,Ring Tlustek GmbH,Gloria-Röhrdanz-Ring 177,Guben,24118,CHE,2024-01-12,active
+CUST000027,Schleich Häring Stiftung & Co. KG,Haaseweg 84,Göppingen,87401,DEU,2023-12-04,active
+CUST000028,Adler GmbH,Fadime-Hesse-Platz 81,Tübingen,86801,AUT,2023-06-29,inactive
+CUST000029,Ritter AG,Säuberlichstr. 55,Kaiserslautern,62045,CHE,2022-12-19,inactive
+CUST000030,Stoll GbR,Nikolaus-Zahn-Weg 168,Aue,92322,AUT,2022-01-21,inactive
+CUST000031,Walter GmbH,Staudeallee 118,Gadebusch,42160,DEU,2023-07-11,active
+CUST000032,Mies GmbH,Heidrichplatz 64,Jena,36541,CHE,2020-03-13,inactive
+CUST000033,Pechel,Stiebitzallee 68,Bad Kissingen,1429,CHE,2019-12-09,inactive
+CUST000034,Schenk GmbH & Co. KG,Vollbrechtallee 150,Greiz,69816,AUT,2022-06-08,inactive
+CUST000035,Trommler GmbH & Co. KG,Annamaria-Renner-Allee 36,Sternberg,56159,CHE,2020-12-16,inactive
+CUST000036,Tschentscher GmbH,Stahrstraße 194,Stollberg,64823,DEU,2025-04-06,active
+CUST000037,Stey Weiß AG & Co. KGaA,Lachmannstr. 161,Mühldorf am Inn,44369,DEU,2018-11-11,inactive
+CUST000038,Margraf Steuer AG & Co. OHG,Wähnerplatz 153,Suhl,48951,DEU,2022-03-06,inactive
+CUST000039,Hecker Gumprich AG & Co. KG,Bastian-Henschel-Straße 153,Lippstadt,76936,AUT,2020-07-23,inactive
+CUST000040,Finke KGaA,Rosalinde-Weitzel-Gasse 142,Cottbus,32870,DEU,2018-11-12,inactive
+CUST000041,Eimer Mitschke OHG mbH,Wendestraße 30,Wolmirstedt,87277,CHE,2020-06-21,inactive
+CUST000042,Schweitzer GbR,Schomberplatz 197,Herzberg,71434,CHE,2022-09-05,inactive
+CUST000043,Butte,Gerard-Heinrich-Straße 76,Lübeck,31665,AUT,2024-09-20,active
+CUST000044,Haering GmbH & Co. KG,Winklerstr. 1,Worbis,96705,CHE,2023-07-17,active
+CUST000045,Lindner Renner Stiftung & Co. KGaA,Zoran-Hartmann-Ring 196,Mühlhausen,70656,DEU,2020-10-19,inactive
+CUST000046,Scholtz KG,Senta-Kreusel-Weg 161,Griesbach Rottal,16272,AUT,2019-04-30,inactive
+CUST000047,Junken Hahn GmbH & Co. KG,Kallertallee 156,Wolgast,46417,DEU,2024-10-11,active
+CUST000048,Birnbaum,Haufferweg 196,Gerolzhofen,330,DEU,2020-06-11,inactive
+CUST000049,Mühle OHG mbH,Carmela-Harloff-Straße 1,Heinsberg,52991,CHE,2022-11-10,inactive
+CUST000050,Sager AG,Ruppertweg 5,Uffenheim,63193,DEU,2022-06-04,inactive
+CUST000051,Stolze Schinke e.V.,Louise-Rosemann-Gasse 62,Anklam,86518,DEU,2023-10-17,active
+CUST000052,Niemeier Döring GmbH & Co. KG,Schusterallee 21,Mühldorf am Inn,26284,DEU,2021-01-16,inactive
+CUST000053,Wagenknecht Scheel GbR,Henschelallee 195,Husum,47379,CHE,2025-01-30,active
+CUST000054,Oderwald GmbH,Zoltan-Hahn-Ring 169,Osterode am Harz,54948,AUT,2020-04-30,inactive
+CUST000055,Caspar GbR,Niemeierstr. 68,Gadebusch,77701,CHE,2019-09-10,inactive
+CUST000056,Süßebier Henk GmbH,Mühlestr. 55,Havelberg,68557,CHE,2018-10-04,inactive
+CUST000057,Heinrich Dussen van Stiftung & Co. KGaA,Mahmut-Dussen van-Allee 183,Burgdorf,33749,AUT,2022-01-07,inactive
+CUST000058,Hübel GbR,Gießring 167,Vechta,82400,AUT,2021-07-31,inactive
+CUST000059,Schweitzer e.G.,Dobesallee 116,Erbisdorf,94777,DEU,2023-09-18,active
+CUST000060,Herrmann GmbH & Co. KGaA,Marie-Bolzmann-Straße 17,Borna,19022,AUT,2026-04-04,active
+CUST000061,Drubin KG,auch Schlauchinstr. 142,Havelberg,86774,DEU,2019-11-23,inactive
+CUST000062,Scholl,Ekaterina-Warmer-Gasse 2,Querfurt,34123,DEU,2018-07-22,inactive
+CUST000063,Franke AG,Mendeweg 16,Bernburg,40344,DEU,2025-09-26,active
+CUST000064,Heintze,Zirmeallee 85,Diepholz,61832,DEU,2020-09-23,inactive
+CUST000065,Bonbach AG & Co. KGaA,Scheibeweg 72,Nördlingen,71746,CHE,2021-01-18,inactive
+CUST000066,Nohlmans,Buttestr. 139,Geldern,65940,DEU,2020-02-03,inactive
+CUST000067,Ruppert,Kornelia-Steinberg-Ring 122,Rothenburg ob der Tauber,27874,DEU,2021-03-10,inactive
+CUST000068,Schuster Noack AG,Keudelstraße 49,Hagenow,51256,DEU,2025-05-28,active
+CUST000069,Kühnert,Uli-Cichorius-Ring 111,Lübben,51680,AUT,2021-09-29,inactive
+CUST000070,Graf GmbH & Co. OHG,Scholtzallee 120,Hagenow,70348,CHE,2025-11-20,active
+CUST000071,Thanel Neureuther AG,Yasemin-Schuchhardt-Weg 168,Bremervörde,24808,CHE,2025-05-22,active
+CUST000072,Drewes GmbH & Co. KG,Friedericke-Fliegner-Straße 104,Miesbach,84677,CHE,2022-09-09,inactive
+CUST000073,Fiebig,Grein Grothstr. 64,Ahaus,14658,DEU,2024-05-11,active
+CUST000074,van der Dussen Huhn KG,Fischerstraße 115,Hettstedt,55886,DEU,2021-10-05,inactive
+CUST000075,Thanel GbR,Heintzeallee 72,Norden,5766,AUT,2023-09-10,active
+CUST000076,Eberth GmbH & Co. OHG,Ditschlerinallee 114,Starnberg,18702,CHE,2025-05-24,active
+CUST000077,Bruder GmbH & Co. KGaA,Kambsstr. 167,Potsdam,15865,CHE,2026-04-30,active
+CUST000078,Schönland AG,Eva-Stolze-Ring 193,Uelzen,16117,DEU,2024-08-17,active
+CUST000079,Baum Bien GmbH,Klaus-Michael-Klemt-Ring 125,Eilenburg,23869,AUT,2024-02-05,active
+CUST000080,Budig KG,Schollweg 16,Mittweida,79237,DEU,2022-03-30,inactive
+CUST000081,Stahr Anders e.V.,Hövelweg 100,Tübingen,17594,AUT,2021-05-23,inactive
+CUST000082,Meyer Jacobi Jäckel AG & Co. OHG,Nettegasse 109,Aschaffenburg,69594,CHE,2020-04-05,inactive
+CUST000083,Kroker,Andersstr. 184,Füssen,97439,AUT,2024-10-03,active
+CUST000084,Grein Groth,Stiebitzallee 76,Wiedenbrück,10470,DEU,2025-11-02,active
+CUST000085,Conradi GmbH,Weinholdstraße 189,Eckernförde,32858,CHE,2025-10-23,active
+CUST000086,Nerger Hübel Stiftung & Co. KGaA,Drewesstraße 81,Lemgo,23685,DEU,2025-12-06,active
+CUST000087,Hettner KG,Uli-Koch-Allee 123,Aue,96513,CHE,2020-07-15,inactive
+CUST000088,Rörricht,Schmidtplatz 15,Bad Kissingen,74612,CHE,2025-08-05,active
+CUST000089,Nohlmans Drub AG,Reni-Renner-Platz 18,Lübeck,75869,CHE,2025-09-24,active
+CUST000090,Dippel,Schmiedtstraße 61,Karlsruhe,5377,AUT,2025-02-23,active
+CUST000091,Striebitz GmbH,Bolanderstraße 64,Badibling,31713,CHE,2019-10-29,inactive
+CUST000092,Henk Eberth e.V.,Charles-Wieloch-Weg 159,Göppingen,93352,DEU,2021-10-16,inactive
+CUST000093,Ehlert KG,Gertzgasse 150,Apolda,20539,CHE,2020-08-18,inactive
+CUST000094,Hettner AG,Jolanthe-Linke-Weg 67,Merseburg,17758,DEU,2018-12-25,inactive
+CUST000095,Hartung,Iwona-Ziegert-Allee 81,Torgau,70076,DEU,2023-07-08,active
+CUST000096,Noack Stiftung & Co. KG,Briemergasse 34,Kronach,92124,CHE,2019-04-04,inactive
+CUST000097,Radisch,Metzstr. 118,Geithain,11836,AUT,2025-09-05,active
+CUST000098,Kambs Metz GmbH,Vollbrechtgasse 118,Bergzabern,65452,CHE,2020-03-06,inactive
+CUST000099,Caspar AG,Dietzweg 19,Stuttgart,28098,CHE,2024-02-07,active
+CUST000100,Langern GmbH,Ullmanngasse 68,Düren,94519,DEU,2022-07-31,inactive

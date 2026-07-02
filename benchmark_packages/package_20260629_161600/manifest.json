@@ -1,0 +1,17 @@
+{
+  "package_id": "package_20260629_161600",
+  "version": "1.0",
+  "created_at": "2026-06-29T16:16:00.189678",
+  "task_type": "customer_migration",
+  "scenario_id": "ERP_CUSTOMER_MIGRATION_V1",
+  "reproducibility": {
+    "seed": 42,
+    "deterministic": true
+  },
+  "entry_points": {
+    "dataset_dirty": "data/dataset_dirty.csv",
+    "dataset_clean": "data/dataset_clean.csv",
+    "ground_truth": "ground_truth/ground_truth.json",
+    "scenario": "scenario.yaml"
+  }
+}
